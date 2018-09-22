@@ -1,0 +1,960 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>babel-preset-env使用指南 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../Node/" />
+    
+    
+    <link rel="prev" href="模块区别.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    笔记本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../HTML_BASE/">
+            
+                <a href="../HTML_BASE/">
+            
+                    
+                    HTML文档
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../HTML_BASE/Html5无刷新URL.html">
+            
+                <a href="../HTML_BASE/Html5无刷新URL.html">
+            
+                    
+                    Html5无刷新URL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../HTML_BASE/页面渲染流程.html">
+            
+                <a href="../HTML_BASE/页面渲染流程.html">
+            
+                    
+                    页面渲染流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../CSS/">
+            
+                <a href="../CSS/">
+            
+                    
+                    CSS文档
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../CSS/css常见布局.html">
+            
+                <a href="../CSS/css常见布局.html">
+            
+                    
+                    css常见布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../JS/">
+            
+                <a href="../JS/">
+            
+                    
+                    JS文档
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../JS/JS面向对象.html">
+            
+                <a href="../JS/JS面向对象.html">
+            
+                    
+                    JS面向对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../JS/DOM基础详解.html">
+            
+                <a href="../JS/DOM基础详解.html">
+            
+                    
+                    DOM基础详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    ES6文档
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="es6基础.html">
+            
+                <a href="es6基础.html">
+            
+                    
+                    es6基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="模块区别.html">
+            
+                <a href="模块区别.html">
+            
+                    
+                    模块区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.3" data-path="babel-preset-env使用指南.html">
+            
+                <a href="babel-preset-env使用指南.html">
+            
+                    
+                    babel-preset-env使用指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../Node/">
+            
+                <a href="../Node/">
+            
+                    
+                    NodeJS服务端
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../Node/npmvsyarn之对比.html">
+            
+                <a href="../Node/npmvsyarn之对比.html">
+            
+                    
+                    Npm vs Yarn 之对比
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../Node/PM2基础操作.html">
+            
+                <a href="../Node/PM2基础操作.html">
+            
+                    
+                    PM2基础操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../Node/Redis来实现定时任务.html">
+            
+                <a href="../Node/Redis来实现定时任务.html">
+            
+                    
+                    Redis来实现定时任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../Config/">
+            
+                <a href="../Config/">
+            
+                    
+                    配置文件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../Config/editorconfig.html">
+            
+                <a href="../Config/editorconfig.html">
+            
+                    
+                    Editorconfig配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../Config/eslint.html">
+            
+                <a href="../Config/eslint.html">
+            
+                    
+                    Eslint配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../Language/">
+            
+                <a href="../Language/">
+            
+                    
+                    开发语言
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../Language/react基础.html">
+            
+                <a href="../Language/react基础.html">
+            
+                    
+                    react基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../Language/react-router.html">
+            
+                <a href="../Language/react-router.html">
+            
+                    
+                    react-router
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../HTTP/">
+            
+                <a href="../HTTP/">
+            
+                    
+                    网络协议文档
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../HTTP/http基础.html">
+            
+                <a href="../HTTP/http基础.html">
+            
+                    
+                    http基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../HTTP/http状态码讲解.html">
+            
+                <a href="../HTTP/http状态码讲解.html">
+            
+                    
+                    http状态码讲解
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../Safety/">
+            
+                <a href="../Safety/">
+            
+                    
+                    安全性能
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../Safety/web安全-XSS.html">
+            
+                <a href="../Safety/web安全-XSS.html">
+            
+                    
+                    web安全-XSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../Safety/前端监控和前端埋点方案设计.html">
+            
+                <a href="../Safety/前端监控和前端埋点方案设计.html">
+            
+                    
+                    前端监控和前端埋点方案设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../BuildTools/">
+            
+                <a href="../BuildTools/">
+            
+                    
+                    构建工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../BuildTools/webpack基础.html">
+            
+                <a href="../BuildTools/webpack基础.html">
+            
+                    
+                    webpack基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../BuildTools/Git基础操作.html">
+            
+                <a href="../BuildTools/Git基础操作.html">
+            
+                    
+                    Git基础操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../CommTools/">
+            
+                <a href="../CommTools/">
+            
+                    
+                    公共具体
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../Other/">
+            
+                <a href="../Other/">
+            
+                    
+                    其他
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../Other/参考书籍.html">
+            
+                <a href="../Other/参考书籍.html">
+            
+                    
+                    参考书籍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../Other/读取摘要.html">
+            
+                <a href="../Other/读取摘要.html">
+            
+                    
+                    读取摘要
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="../Other/前端技能汇总.html">
+            
+                <a href="../Other/前端技能汇总.html">
+            
+                    
+                    前端技能汇总
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >babel-preset-env使用指南</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div class="postBody">
+            <div id="cnblogs_post_body" class="blogpost-body cnblogs-markdown"><h2 id="&#x6587;&#x7AE0;&#x6982;&#x89C8;">&#x6587;&#x7AE0;&#x6982;&#x89C8;</h2>
+<p>babel-preset-env&#x662F;&#x975E;&#x5E38;&#x91CD;&#x8981;&#x4E14;&#x5E38;&#x7528;&#x7684;&#x4E00;&#x4E2A;&#x63D2;&#x4EF6;&#x9884;&#x8BBE;&#xFF0C;&#x638C;&#x63E1;&#x5B83;&#x7684;&#x7528;&#x6CD5;&#x4EE5;&#x53CA;&#x5B9E;&#x73B0;&#x539F;&#x7406;&#x975E;&#x5E38;&#x6709;&#x5FC5;&#x8981;&#x3002;</p>
+<p>&#x672C;&#x6587;&#x4E3B;&#x8981;&#x5185;&#x5BB9;&#x5305;&#x62EC;&#xFF1A;babel-preset-env&#x662F;&#x4EC0;&#x4E48;&#x3001;&#x5165;&#x95E8;&#x5B9E;&#x4F8B;&#x3001;&#x5982;&#x4F55;&#x914D;&#x7F6E;&#x4EE5;&#x652F;&#x6301;&#x7279;&#x5B9A;&#x7248;&#x672C;&#x7684; node/&#x6D4F;&#x89C8;&#x5668;&#x3001;&#x5B9E;&#x73B0;&#x539F;&#x7406;&#x7B49;&#x3002;</p>
+<p>&#x672C;&#x6587;&#x6240;&#x6709;&#x4F8B;&#x5B50;&#x53EF;&#x4EE5;&#x5728; <a href="https://github.com/chyingp/blog/tree/master/demo/2018.06.02-babel-preset-env" target="_blank">&#x7B14;&#x8005;&#x7684;github</a> &#x627E;&#x5230;&#x3002;</p>
+<h2 id="babel-preset-env&#x7B80;&#x4ECB;">babel-preset-env&#x7B80;&#x4ECB;</h2>
+<p>&#x9996;&#x5148;&#xFF0C;&#x4ECB;&#x7ECD;&#x4E0B;&#x5386;&#x53F2;&#x80CC;&#x666F;&#xFF0C;&#x5BF9;&#x4E86;&#x89E3;&#x548C;&#x5B66;&#x4E60; babel-preset-env &#x6709;&#x5E2E;&#x52A9;&#x3002;</p>
+<p>&#x6700;&#x521D;&#xFF0C;&#x4E3A;&#x4E86;&#x8BA9;&#x5F00;&#x53D1;&#x8005;&#x80FD;&#x591F;&#x5C3D;&#x65E9;&#x7528;&#x4E0A;&#x65B0;&#x7684;JS&#x7279;&#x6027;&#xFF0C;babel&#x56E2;&#x961F;&#x5F00;&#x53D1;&#x4E86;babel-preset-latest&#x3002;&#x8FD9;&#x4E2A;preset&#x6BD4;&#x8F83;&#x7279;&#x6B8A;&#xFF0C;&#x5B83;&#x662F;&#x591A;&#x4E2A;preset&#x7684;&#x96C6;&#x5408;(es2015+)&#xFF0C;&#x5E76;&#x4E14;&#x968F;&#x7740;ECMA&#x89C4;&#x8303;&#x7684;&#x66F4;&#x65B0;&#x66F4;&#x589E;&#x52A0;&#x5B83;&#x7684;&#x5185;&#x5BB9;&#x3002;</p>
+<p>&#x6BD4;&#x5982;&#xFF0C;&#x5F53;&#x524D;(2018.06.02)&#xFF0C;&#x5B83;&#x5305;&#x542B;&#x7684;preset&#x5305;&#x62EC;&#xFF1A;es2017&#x3001;es1016&#x3001;es2015&#x3002;</p>
+<p>&#x5230;&#x4E86;&#x660E;&#x5E74;&#xFF0C;&#x53EF;&#x80FD;&#x5B83;&#x5305;&#x542B;&#x7684;preset&#x5C31;&#x5305;&#x62EC;&#xFF1A;es2018&#x3001;es2017&#x3001;es2016&#x3001;es2015&#x3002;</p>
+<p>&#x968F;&#x7740;&#x65F6;&#x95F4;&#x7684;&#x63A8;&#x79FB;&#xFF0C;babel-preset-latest &#x5305;&#x542B;&#x7684;&#x63D2;&#x4EF6;&#x8D8A;&#x6765;&#x8D8A;&#x591A;&#xFF0C;&#x8FD9;&#x5E26;&#x6765;&#x4E86;&#x5982;&#x4E0B;&#x95EE;&#x9898;&#xFF1A;</p>
+<ol>
+<li>&#x52A0;&#x8F7D;&#x7684;&#x63D2;&#x4EF6;&#x8D8A;&#x6765;&#x8D8A;&#x591A;&#xFF0C;&#x7F16;&#x8BD1;&#x901F;&#x5EA6;&#x4F1A;&#x8D8A;&#x6765;&#x8D8A;&#x6162;&#xFF1B;</li>
+<li>&#x968F;&#x7740;&#x7528;&#x6237;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x5347;&#x7EA7;&#xFF0C;ECMA&#x89C4;&#x8303;&#x7684;&#x652F;&#x6301;&#x9010;&#x6B65;&#x5B8C;&#x5584;&#xFF0C;&#x7F16;&#x8BD1;&#x81F3;&#x4F4E;&#x7248;&#x672C;&#x89C4;&#x8303;&#x7684;&#x5FC5;&#x8981;&#x6027;&#x5728;&#x51CF;&#x5C11;&#xFF08;&#x6BD4;&#x5982;ES6 -&gt; ES5&#xFF09;&#xFF0C;&#x591A;&#x4F59;&#x7684;&#x8F6C;&#x6362;&#x4E0D;&#x5355;&#x964D;&#x4F4E;&#x6267;&#x884C;&#x6548;&#x7387;&#xFF0C;&#x8FD8;&#x6D6A;&#x8D39;&#x5E26;&#x5BBD;&#x3002;</li>
+</ol>
+<p>&#x56E0;&#x4E3A;&#x4E0A;&#x8FF0;&#x95EE;&#x9898;&#x7684;&#x5B58;&#x5728;&#xFF0C;babel&#x5B98;&#x65B9;&#x63A8;&#x51FA;&#x4E86;babel-preset-env&#x63D2;&#x4EF6;&#x3002;&#x5B83;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x5F00;&#x53D1;&#x8005;&#x7684;&#x914D;&#x7F6E;&#xFF0C;&#x6309;&#x9700;&#x52A0;&#x8F7D;&#x63D2;&#x4EF6;&#x3002;&#x914D;&#x7F6E;&#x9879;&#x5927;&#x81F4;&#x5305;&#x62EC;&#xFF1A;</p>
+<ol>
+<li>&#x9700;&#x8981;&#x652F;&#x6301;&#x7684;&#x5E73;&#x53F0;&#xFF1A;&#x6BD4;&#x5982;node&#x3001;&#x6D4F;&#x89C8;&#x5668;&#x7B49;&#x3002;</li>
+<li>&#x9700;&#x8981;&#x652F;&#x6301;&#x7684;&#x5E73;&#x53F0;&#x7684;&#x7248;&#x672C;&#xFF1A;<a href="mailto:&#x6BD4;&#x5982;&#x652F;&#x6301;node@6.1&#x7B49;" target="_blank">&#x6BD4;&#x5982;&#x652F;&#x6301;node@6.1&#x7B49;</a>&#x3002;</li>
+</ol>
+<p>&#x9ED8;&#x8BA4;&#x914D;&#x7F6E;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5B83;&#x8DDF; babel-preset-latest &#x662F;&#x7B49;&#x540C;&#x7684;&#xFF0C;&#x4F1A;&#x52A0;&#x8F7D;&#x4ECE;es2015&#x5F00;&#x59CB;&#x7684;&#x6240;&#x6709;preset&#x3002;</p>
+<h2 id="&#x5165;&#x95E8;&#x4F8B;&#x5B50;">&#x5165;&#x95E8;&#x4F8B;&#x5B50;</h2>
+<p>&#x9996;&#x5148;&#xFF0C;&#x5B89;&#x88C5;&#x4F9D;&#x8D56;&#x3002;</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">npm install babel-cli --save-dev
+npm install babel-preset-env --save-dev</code></pre></div>
+<p>&#x521B;&#x5EFA; index.js&#x3002;</p>
+<div class="sourceCode"><pre class="sourceCode javascript"><code class="sourceCode javascript">let foo = () =&gt; &apos;foo&apos;;</code></pre></div>
+<p>&#x914D;&#x7F6E;&#x6587;&#x4EF6; .babelrc &#x5982;&#x4E0B;&#xFF0C;&#x5F53;&#x524D;&#x4E3A;&#x9ED8;&#x8BA4;&#x914D;&#x7F6E;&#x3002;</p>
+<div class="sourceCode"><pre class="sourceCode json"><code class="sourceCode json">{
+  &quot;presets&quot;: [ &quot;env&quot; ]
+}</code></pre></div>
+<p>&#x8FD0;&#x884C;&#x8F6C;&#x6362;&#x547D;&#x4EE4;</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">`npm bin`/babel index.js</code></pre></div>
+<p>&#x8F6C;&#x6362;&#x7ED3;&#x679C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<div class="sourceCode"><pre class="sourceCode javascript"><code class="sourceCode javascript">&apos;use strict&apos;;
+
+var foo = function foo() {
+  return &apos;foo&apos;;
+};</code></pre></div>
+<h2 id="&#x9488;&#x5BF9;node&#x7248;&#x672C;&#x7684;&#x914D;&#x7F6E;">&#x9488;&#x5BF9;node&#x7248;&#x672C;&#x7684;&#x914D;&#x7F6E;</h2>
+<p>&#x524D;&#x9762;&#x63D0;&#x5230;&#xFF0C;babel-preset-env &#x63D0;&#x4F9B;&#x4E86;&#x66F4;&#x7CBE;&#x7EC6;&#x5316;&#x7684;&#x914D;&#x7F6E;&#xFF0C;&#x4EE5;&#x63D0;&#x5347;&#x7F16;&#x8BD1;&#x901F;&#x5EA6;&#xFF0C;&#x540C;&#x65F6;&#x51CF;&#x5C11;&#x4EE3;&#x7801;&#x5197;&#x4F59;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x770B;&#x4E0B;&#x5B9E;&#x9645;&#x4F8B;&#x5B50;&#x3002;&#x5047;&#x8BBE;&#x5F53;&#x524D;&#x6709;&#x5982;&#x4E0B;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code>// index.js
+async function foo () {}</code></pre>
+<p>&#x91C7;&#x7528; babel-preset-env&#xFF0C;&#x9ED8;&#x8BA4;&#x914D;&#x7F6E;&#x4E0B;&#xFF0C;&#x8F93;&#x51FA;&#x7684;&#x8F6C;&#x6362;&#x7ED3;&#x679C;&#x5982;&#x4E0B;&#xFF08;&#x5177;&#x4F53;&#x5185;&#x5BB9;&#x4E0D;&#x7528;&#x5173;&#x5FC3;&#xFF0C;&#x77E5;&#x9053;&#x5F88;&#x957F;&#x5C31;&#x884C;&#x4E86;&#xFF09;&#x3002;</p>
+<div class="sourceCode"><pre class="sourceCode javascript"><code class="sourceCode javascript">&quot;use strict&quot;;
+
+var foo = function () {
+  var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
+    return regeneratorRuntime.wrap(function _callee$(_context) {
+      while (1) {
+        switch (_context.prev = _context.next) {
+          case 0:
+          case &quot;end&quot;:
+            return _context.stop();
+        }
+      }
+    }, _callee, this);
+  }));
+
+  return function foo() {
+    return _ref.apply(this, arguments);
+  };
+}();
+
+function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step(&quot;next&quot;, value); }, function (err) { step(&quot;throw&quot;, err); }); } } return step(&quot;next&quot;); }); }; }</code></pre></div>
+<p><a href="mailto:&#x5982;&#x679C;&#x6211;&#x4EEC;&#x7684;&#x4EE3;&#x7801;&#x662F;&#x6253;&#x7B97;&#x8DD1;&#x5728;node@8.9.3&#x7248;&#x672C;&#x4E0A;" target="_blank">&#x5982;&#x679C;&#x6211;&#x4EEC;&#x7684;&#x4EE3;&#x7801;&#x662F;&#x6253;&#x7B97;&#x8DD1;&#x5728;node@8.9.3&#x7248;&#x672C;&#x4E0A;</a>&#xFF0C;&#x90A3;&#x4E0A;&#x9762;&#x7684;&#x517C;&#x5BB9;&#x4EE3;&#x7801;&#x5C31;&#x6709;&#x70B9;&#x591A;&#x4F59;&#x4E86;&#xFF0C;<a href="mailto:&#x56E0;&#x4E3A;node@8.9.3&#x5DF2;&#x7ECF;&#x652F;&#x6301;&#x4E86;async/await" target="_blank">&#x56E0;&#x4E3A;node@8.9.3&#x5DF2;&#x7ECF;&#x652F;&#x6301;&#x4E86;async/await</a>&#x3002;</p>
+<p>&#x4FEE;&#x6539;&#x4E0B; .babelrc&#xFF0C;&#x52A0;&#x4E0A;&#x914D;&#x7F6E;&#x53C2;&#x6570;&quot;target&quot;&#xFF0C;&#x5B83;&#x8868;&#x793A;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x652F;&#x6301;&#x54EA;&#x4E9B;&#x5E73;&#x53F0;+&#x54EA;&#x4E9B;&#x7248;&#x672C;&#x3002;&#x8FD9;&#x91CC;&#x58F0;&#x660E;&#x6211;&#x4EEC;&#x8981;&#x652F;&#x6301;&#x7684;&#x662F;node&#x7248;&#x672C;&#x4E3A;8.9.3&#x3002;</p>
+<div class="sourceCode"><pre class="sourceCode json"><code class="sourceCode json">{
+  &quot;presets&quot;: [
+    [&quot;env&quot;, {
+      &quot;targets&quot;: {
+        &quot;node&quot;: &quot;8.9.3&quot;
+      }      
+    }]
+  ]
+}</code></pre></div>
+<p>&#x518D;&#x6B21;&#x8FDB;&#x884C;&#x8F6C;&#x7801;&#xFF0C;&#x7ED3;&#x679C;&#x5982;&#x4E0B;&#x3002;&#x51E0;&#x4E4E;&#x6CA1;&#x6709;&#x53D8;&#x5316;&#xFF0C;&#x56E0;&#x4E3A;node&#x6700;&#x65B0;&#x7248;&#x672C;&#x652F;&#x6301; async/await&#xFF0C;&#x56E0;&#x6B64;&#x4E0D;&#x9700;&#x8981;&#x989D;&#x5916;&#x7684;&#x517C;&#x5BB9;&#x4EE3;&#x7801;&#x3002;</p>
+<div class="sourceCode"><pre class="sourceCode javascript"><code class="sourceCode javascript">&quot;use strict&quot;;
+
+async function foo() {}</code></pre></div>
+<h2 id="&#x9488;&#x5BF9;&#x6D4F;&#x89C8;&#x5668;&#x7248;&#x672C;&#x7684;&#x914D;&#x7F6E;">&#x9488;&#x5BF9;&#x6D4F;&#x89C8;&#x5668;&#x7248;&#x672C;&#x7684;&#x914D;&#x7F6E;</h2>
+<p>babel-preset-env &#x540C;&#x6837;&#x63D0;&#x4F9B;&#x4E86;&#x5BF9;&#x6D4F;&#x89C8;&#x5668;&#x7248;&#x672C;&#x7684;&#x914D;&#x7F6E;&#x80FD;&#x529B;&#x3002;</p>
+<h3 id="&#x652F;&#x6301;&#x7279;&#x5B9A;&#x7248;&#x672C;&#x7684;&#x6D4F;&#x89C8;&#x5668;">&#x652F;&#x6301;&#x7279;&#x5B9A;&#x7248;&#x672C;&#x7684;&#x6D4F;&#x89C8;&#x5668;</h3>
+<p>&#x5047;&#x8BBE;&#x6211;&#x4EEC;&#x7684;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<div class="sourceCode"><pre class="sourceCode javascript"><code class="sourceCode javascript">let nick = &apos;&#x7A0B;&#x5E8F;&#x733F;&#x5C0F;&#x5361;&apos;;
+let desc = `&#x4F60;&#x597D; ${nick}`;</code></pre></div>
+<p>&#x5982;&#x679C;&#x53EA;&#x9700;&#x8981;&#x652F;&#x6301; IE11&#xFF0C;&#x90A3;&#x4E48;&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#x914D;&#x7F6E;&#x3002;</p>
+<div class="sourceCode"><pre class="sourceCode json"><code class="sourceCode json">{
+  &quot;presets&quot;: [
+    [&quot;env&quot;, {
+      &quot;targets&quot;: {
+        &quot;browsers&quot;: &quot;ie 11&quot;
+      }      
+    }]
+  ]
+}</code></pre></div>
+<p>&#x5982;&#x679C;&#x53EA;&#x9700;&#x8981;&#x652F;&#x6301;&#x652F;&#x6301; Edge 16&#xFF0C;&#x90A3;&#x4E48;&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#x914D;&#x7F6E;</p>
+<div class="sourceCode"><pre class="sourceCode json"><code class="sourceCode json">{
+  &quot;presets&quot;: [
+    [&quot;env&quot;, {
+      &quot;targets&quot;: {
+        &quot;browsers&quot;: &quot;edge 16&quot;
+      }      
+    }]
+  ]
+}</code></pre></div>
+<p>&#x56E0;&#x4E3A; IE 11 &#x4E0D;&#x652F;&#x6301;&#x6A21;&#x677F;&#x5B57;&#x9762;&#x91CF;&#xFF0C;&#x800C; Edge 16&#x652F;&#x6301;&#x6A21;&#x677F;&#x5B57;&#x9762;&#x91CF;&#xFF0C;&#x56E0;&#x6B64;&#x4E0A;&#x9762;&#x914D;&#x7F6E;&#x7684;&#x8F6C;&#x7801;&#x7ED3;&#x679C;&#x662F;&#x4E0D;&#x540C;&#x7684;&#xFF0C;&#x8BFB;&#x8005;&#x53EF;&#x4EE5;&#x81EA;&#x884C;&#x5C1D;&#x8BD5;&#x3002;</p>
+<h3 id="&#x652F;&#x6301;&#x7279;&#x5B9A;&#x7248;&#x672C;&#x8303;&#x56F4;&#x7684;&#x6D4F;&#x89C8;&#x5668;">&#x652F;&#x6301;&#x7279;&#x5B9A;&#x7248;&#x672C;&#x8303;&#x56F4;&#x7684;&#x6D4F;&#x89C8;&#x5668;</h3>
+<p>&#x5927;&#x90E8;&#x5206;&#x65F6;&#x5019;&#xFF0C;&#x6211;&#x4EEC;&#x8981;&#x9488;&#x5BF9;&#x7684;&#x90FD;&#x662F;&#x7279;&#x5B9A;&#x8303;&#x56F4;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#xFF0C;&#x6BD4;&#x5982; IE8+&#xFF0C;&#x90A3;&#x4E48;&#xFF0C;&#x9010;&#x4E2A;&#x6307;&#x5B9A;&#x662F;&#x4E0D;&#x73B0;&#x5B9E;&#x7684;&#x3002;&#x597D;&#x5728; babel-preset-env &#x652F;&#x6301;&#x8981;&#x652F;&#x6301;&#x7684;&#x7248;&#x672C;&#x8303;&#x56F4;&#x3002;</p>
+<p>&#x6BD4;&#x5982;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x652F;&#x6301; IE8+&#x3001;chrome62+&#xFF0C;&#x90A3;&#x4E48;&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#x914D;&#x7F6E;&#xFF1A;</p>
+<div class="sourceCode"><pre class="sourceCode json"><code class="sourceCode json">{
+  &quot;presets&quot;: [
+    [&quot;env&quot;, {
+      &quot;targets&quot;: {
+        &quot;browsers&quot;: [ &quot;ie &gt;= 8&quot;, &quot;chrome &gt;= 62&quot; ]
+      }      
+    }]
+  ]
+}</code></pre></div>
+<p>&#x770B;&#x4E0B;&#x524D;&#x9762;&#x58F0;&#x660E;&#x7684;&#x8303;&#x56F4;&#x6DB5;&#x76D6;&#x4E86;&#x54EA;&#x4E9B;&#x6D4F;&#x89C8;&#x5668;&#x3002;</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ `npm bin`/browserslist &quot;ie &gt;= 8, chrome &gt;= 62&quot;
+chrome 66
+chrome 65
+chrome 64
+chrome 63
+chrome 62
+ie 11
+ie 10
+ie 9
+ie 8</code></pre></div>
+<p>&#x5BF9;&#x6D4F;&#x89C8;&#x5668;&#x7248;&#x672C;&#x8303;&#x56F4;&#x7684;&#x914D;&#x7F6E;&#xFF0C;babel-preset-env &#x501F;&#x52A9;&#x4E86; <a href="https://github.com/browserslist/browserslist" title="browserslist" target="_blank">browserslist</a> &#x8FD9;&#x4E2A;&#x5E93;&#xFF0C;&#x8FD8;&#x6709;&#x66F4;&#x591A;&#x7684;&#x914D;&#x7F6E;&#x65B9;&#x5F0F;&#xFF0C;&#x53EF;&#x4EE5;&#x81EA;&#x884C;&#x63A2;&#x7A76;&#x3002;</p>
+<h2 id="babel-preset-env&#x5B9E;&#x73B0;&#x539F;&#x7406;">babel-preset-env&#x5B9E;&#x73B0;&#x539F;&#x7406;</h2>
+<p>&#x5B9E;&#x73B0;&#x539F;&#x7406;&#x5F88;&#x7B80;&#x5355;&#x3002;&#x5B98;&#x65B9;&#x6587;&#x6863;&#x5199;&#x7684;&#x633A;&#x7B80;&#x6D01;&#x7684;&#xFF0C;&#x6311;&#x91CD;&#x70B9;&#x5927;&#x81F4;&#x7FFB;&#x8BD1;&#x4E0B;&#x3002;</p>
+<p>1&#x3001;&#x9996;&#x5148;&#xFF0C;&#x68C0;&#x6D4B;&#x6D4F;&#x89C8;&#x5668;&#x5BF9;JS&#x7279;&#x6027;&#x7684;&#x652F;&#x6301;&#x7A0B;&#x5EA6;&#xFF0C;&#x6BD4;&#x5982;&#x901A;&#x8FC7;&#x901A;&#x8FC7; <a href="https://github.com/kangax/compat-table" title="compat-table" target="_blank">compat-table</a> &#x8FD9;&#x6837;&#x7684;&#x5916;&#x90E8;&#x6570;&#x636E;&#x3002;</p>
+<p><img src="https://www.chyingp.com/wp-content/uploads/2018/06/fe1fe66055df7efde0355429452744f7.png"></p>
+<p>2&#x3001;&#x5C06; JS&#x7279;&#x6027; &#x8DDF; &#x7279;&#x5B9A;&#x7684;babel&#x63D2;&#x4EF6; &#x5EFA;&#x7ACB;&#x6620;&#x5C04;&#xFF0C;&#x6620;&#x5C04;&#x5173;&#x7CFB;&#x53EF;&#x4EE5;&#x53C2;&#x8003; <a href="https://github.com/babel/babel-preset-env/blob/master/data/plugin-features.js" target="_blank">&#x8FD9;&#x91CC;</a>&#x3002;</p>
+<p>3&#x3001;stage-x &#x7684;&#x63D2;&#x4EF6;&#x4E0D;&#x5305;&#x62EC;&#x5728;&#x5185;&#x3002;</p>
+<p>4&#x3001;&#x6839;&#x636E;&#x5F00;&#x53D1;&#x8005;&#x7684;&#x914D;&#x7F6E;&#x9879;&#xFF0C;&#x786E;&#x5B9A;&#x81F3;&#x5C11;&#x9700;&#x8981;&#x5305;&#x542B;&#x54EA;&#x4E9B;&#x63D2;&#x4EF6;&#x3002;&#x6BD4;&#x5982;&#x58F0;&#x660E;&#x4E86;&#x9700;&#x8981;&#x652F;&#x6301; IE8+&#x3001;chrome62+&#xFF0C;&#x90A3;&#x4E48;&#xFF0C;&#x6240;&#x6709;IE8+&#x9700;&#x8981;&#x7684;&#x63D2;&#x4EF6;&#x90FD;&#x4F1A;&#x88AB;&#x5305;&#x542B;&#x8FDB;&#x53BB;&#x3002;</p>
+<h2 id="&#x76F8;&#x5173;&#x94FE;&#x63A5;">&#x76F8;&#x5173;&#x94FE;&#x63A5;</h2>
+<p><a href="https://babeljs.io/docs/plugins/preset-env/#how-it-works" class="uri" title="https://babeljs.io/docs/plugins/preset-env/#how-it-works" target="_blank">https://babeljs.io/docs/plugins/preset-env/#how-it-works</a></p>
+</div><div id="MySignature" style="display: block;"><br>
+github&#x535A;&#x5BA2;&#xFF1A;<a href="https://github.com/chyingp/blog" target="_blank">https://github.com/chyingp/blog</a>
+<br>
+&#x65B0;&#x6D6A;&#x5FAE;&#x535A;&#xFF1A;<a href="http://weibo.com/chyingp" target="_blank">http://weibo.com/chyingp</a>
+<br>
+&#x7AD9;&#x9177;&#x4E3B;&#x9875;&#xFF1A;<a href="http://www.zcool.com.cn/u/346408/" target="_blank">http://www.zcool.com.cn/u/346408/</a></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+<div id="BlogPostCategory">&#x5206;&#x7C7B;: <a href="http://www.cnblogs.com/chyingp/category/560724.html" target="_blank">&#x524D;&#x7AEF;&#x5DE5;&#x5177;</a></div>
+<div id="EntryTag">&#x6807;&#x7B7E;: <a href="http://www.cnblogs.com/chyingp/tag/babel/" target="_blank">babel</a>, <a href="http://www.cnblogs.com/chyingp/tag/babel-plugin/" target="_blank">babel-plugin</a>, <a href="http://www.cnblogs.com/chyingp/tag/babel-preset-env/" target="_blank">babel-preset-env</a></div>
+<div id="blog_post_info"><div id="green_channel">
+        <a href="javascript:void(0);" id="green_channel_digg" onclick="DiggIt(9137849,cb_blogId,1);green_channel_success(this,&apos;&#x8C22;&#x8C22;&#x63A8;&#x8350;&#xFF01;&apos;);" target="_blank">&#x597D;&#x6587;&#x8981;&#x9876;</a>
+            <a id="green_channel_follow" onclick="follow(&apos;46ff3810-43ac-df11-8eb9-001cf0cd104b&apos;);" href="javascript:void(0);" target="_blank">&#x5173;&#x6CE8;&#x6211;</a>
+    <a id="green_channel_favorite" onclick="AddToWz(cb_entryId);return false;" href="javascript:void(0);" target="_blank">&#x6536;&#x85CF;&#x8BE5;&#x6587;</a>
+    <a id="green_channel_weibo" href="javascript:void(0);" title="&#x5206;&#x4EAB;&#x81F3;&#x65B0;&#x6D6A;&#x5FAE;&#x535A;" onclick="ShareToTsina()" target="_blank"><img src="../../../common.cnblogs.com/images/icon_weibo_24.png" alt=""></a>
+    <a id="green_channel_wechat" href="javascript:void(0);" title="&#x5206;&#x4EAB;&#x81F3;&#x5FAE;&#x4FE1;" onclick="shareOnWechat()" target="_blank"><img src="../../../common.cnblogs.com/images/wechat.png" alt=""></a>
+</div>
+<div id="author_profile">
+    <div id="author_profile_info" class="author_profile_info">
+            <a href="http://home.cnblogs.com/u/chyingp/" target="_blank"><img src="../../../pic.cnblogs.com/face/154088/20140304010315.png" class="author_avatar" alt=""></a>
+        <div id="author_profile_detail" class="author_profile_info">
+            <a href="http://home.cnblogs.com/u/chyingp/" target="_blank">&#x7A0B;&#x5E8F;&#x733F;&#x5C0F;&#x5361;</a><br>
+            <a href="http://home.cnblogs.com/u/chyingp/followees" target="_blank">&#x5173;&#x6CE8; - 22</a><br>
+            <a href="http://home.cnblogs.com/u/chyingp/followers" target="_blank">&#x7C89;&#x4E1D; - 962</a>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div id="author_profile_honor">&#x8363;&#x8A89;&#xFF1A;<a href="http://www.cnblogs.com/expert/" target="_blank">&#x63A8;&#x8350;&#x535A;&#x5BA2;</a></div>
+    <div id="author_profile_follow">
+                <a href="javascript:void(0);" onclick="follow(&apos;46ff3810-43ac-df11-8eb9-001cf0cd104b&apos;);return false;" target="_blank">+&#x52A0;&#x5173;&#x6CE8;</a>
+    </div>
+</div>
+<div id="div_digg">
+    <div class="diggit" onclick="votePost(9137849,&apos;Digg&apos;)">
+        <span class="diggnum" id="digg_count">1</span>
+    </div>
+    <div class="buryit" onclick="votePost(9137849,&apos;Bury&apos;)">
+        <span class="burynum" id="bury_count">0</span>
+    </div>
+    <div class="clear"></div>
+    <div class="diggword" id="digg_tips">
+    </div>
+</div>
+<script type="text/javascript">
+    currentDiggType = 0;
+</script></div>
+<div class="clear"></div>
+<div id="post_next_prev"><a href="http://www.cnblogs.com/chyingp/p/how-to-write-a-babel-plugin.html" class="p_n_p_prefix" target="_blank">&#xAB; </a> &#x4E0A;&#x4E00;&#x7BC7;&#xFF1A;<a href="http://www.cnblogs.com/chyingp/p/how-to-write-a-babel-plugin.html" title="&#x53D1;&#x5E03;&#x4E8E;2018-06-04 08:16" target="_blank">Babel&#x63D2;&#x4EF6;&#x5F00;&#x53D1;&#x5165;&#x95E8;&#x6307;&#x5357;</a><br><a href="http://www.cnblogs.com/chyingp/p/nodejs-learning-guide-github-got-1000-stars.html" class="p_n_p_prefix" target="_blank">&#xBB; </a> &#x4E0B;&#x4E00;&#x7BC7;&#xFF1A;<a href="http://www.cnblogs.com/chyingp/p/nodejs-learning-guide-github-got-1000-stars.html" title="&#x53D1;&#x5E03;&#x4E8E;2018-06-06 07:35" target="_blank">&#x4E00;&#x70B9;&#x611F;&#x609F;&#xFF1A;&#x300A;Node.js&#x5B66;&#x4E60;&#x7B14;&#x8BB0;&#x300B;star&#x6570;&#x7A81;&#x7834;1000+</a><br></div>
+</div>
+
+
+<pre><code>    &lt;/div&gt;
+</code></pre></div>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="模块区别.html" class="navigation navigation-prev " aria-label="Previous page: 模块区别">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../Node/" class="navigation navigation-next " aria-label="Next page: NodeJS服务端">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"babel-preset-env使用指南","level":"1.5.3","depth":2,"next":{"title":"NodeJS服务端","level":"1.6","depth":1,"path":"Node/README.md","ref":"Node/README.md","articles":[{"title":"Npm vs Yarn 之对比","level":"1.6.1","depth":2,"path":"Node/npmvsyarn之对比.md","ref":"Node/npmvsyarn之对比.md","articles":[]},{"title":"PM2基础操作","level":"1.6.2","depth":2,"path":"Node/PM2基础操作.md","ref":"Node/PM2基础操作.md","articles":[]},{"title":"Redis来实现定时任务","level":"1.6.3","depth":2,"path":"Node/Redis来实现定时任务.md","ref":"Node/Redis来实现定时任务.md","articles":[]}]},"previous":{"title":"模块区别","level":"1.5.2","depth":2,"path":"ES6/模块区别.md","ref":"ES6/模块区别.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ES6/babel-preset-env使用指南.md","mtime":"2018-08-23T23:58:51.432Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-22T10:25:47.014Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

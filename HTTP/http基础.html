@@ -1,0 +1,793 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>http基础 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="http状态码讲解.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    笔记本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../HTML_BASE/">
+            
+                <a href="../HTML_BASE/">
+            
+                    
+                    HTML文档
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../HTML_BASE/Html5无刷新URL.html">
+            
+                <a href="../HTML_BASE/Html5无刷新URL.html">
+            
+                    
+                    Html5无刷新URL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../HTML_BASE/页面渲染流程.html">
+            
+                <a href="../HTML_BASE/页面渲染流程.html">
+            
+                    
+                    页面渲染流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../CSS/">
+            
+                <a href="../CSS/">
+            
+                    
+                    CSS文档
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../CSS/css常见布局.html">
+            
+                <a href="../CSS/css常见布局.html">
+            
+                    
+                    css常见布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../JS/">
+            
+                <a href="../JS/">
+            
+                    
+                    JS文档
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../JS/JS面向对象.html">
+            
+                <a href="../JS/JS面向对象.html">
+            
+                    
+                    JS面向对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../JS/DOM基础详解.html">
+            
+                <a href="../JS/DOM基础详解.html">
+            
+                    
+                    DOM基础详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../ES6/">
+            
+                <a href="../ES6/">
+            
+                    
+                    ES6文档
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../ES6/es6基础.html">
+            
+                <a href="../ES6/es6基础.html">
+            
+                    
+                    es6基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../ES6/模块区别.html">
+            
+                <a href="../ES6/模块区别.html">
+            
+                    
+                    模块区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../ES6/babel-preset-env使用指南.html">
+            
+                <a href="../ES6/babel-preset-env使用指南.html">
+            
+                    
+                    babel-preset-env使用指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../Node/">
+            
+                <a href="../Node/">
+            
+                    
+                    NodeJS服务端
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../Node/npmvsyarn之对比.html">
+            
+                <a href="../Node/npmvsyarn之对比.html">
+            
+                    
+                    Npm vs Yarn 之对比
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../Node/PM2基础操作.html">
+            
+                <a href="../Node/PM2基础操作.html">
+            
+                    
+                    PM2基础操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../Node/Redis来实现定时任务.html">
+            
+                <a href="../Node/Redis来实现定时任务.html">
+            
+                    
+                    Redis来实现定时任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../Config/">
+            
+                <a href="../Config/">
+            
+                    
+                    配置文件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../Config/editorconfig.html">
+            
+                <a href="../Config/editorconfig.html">
+            
+                    
+                    Editorconfig配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../Config/eslint.html">
+            
+                <a href="../Config/eslint.html">
+            
+                    
+                    Eslint配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../Language/">
+            
+                <a href="../Language/">
+            
+                    
+                    开发语言
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../Language/react基础.html">
+            
+                <a href="../Language/react基础.html">
+            
+                    
+                    react基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../Language/react-router.html">
+            
+                <a href="../Language/react-router.html">
+            
+                    
+                    react-router
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    网络协议文档
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.9.1" data-path="http基础.html">
+            
+                <a href="http基础.html">
+            
+                    
+                    http基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="http状态码讲解.html">
+            
+                <a href="http状态码讲解.html">
+            
+                    
+                    http状态码讲解
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../Safety/">
+            
+                <a href="../Safety/">
+            
+                    
+                    安全性能
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../Safety/web安全-XSS.html">
+            
+                <a href="../Safety/web安全-XSS.html">
+            
+                    
+                    web安全-XSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../Safety/前端监控和前端埋点方案设计.html">
+            
+                <a href="../Safety/前端监控和前端埋点方案设计.html">
+            
+                    
+                    前端监控和前端埋点方案设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../BuildTools/">
+            
+                <a href="../BuildTools/">
+            
+                    
+                    构建工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../BuildTools/webpack基础.html">
+            
+                <a href="../BuildTools/webpack基础.html">
+            
+                    
+                    webpack基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../BuildTools/Git基础操作.html">
+            
+                <a href="../BuildTools/Git基础操作.html">
+            
+                    
+                    Git基础操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../CommTools/">
+            
+                <a href="../CommTools/">
+            
+                    
+                    公共具体
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../Other/">
+            
+                <a href="../Other/">
+            
+                    
+                    其他
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../Other/参考书籍.html">
+            
+                <a href="../Other/参考书籍.html">
+            
+                    
+                    参考书籍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../Other/读取摘要.html">
+            
+                <a href="../Other/读取摘要.html">
+            
+                    
+                    读取摘要
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="../Other/前端技能汇总.html">
+            
+                <a href="../Other/前端技能汇总.html">
+            
+                    
+                    前端技能汇总
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >http基础</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>1&#x3001;&#x7F51;&#x7EDC;&#x6A21;&#x578B;&#xFF1A;
+  &#x5E94;&#x7528;&#x5C42;:http&#x534F;&#x8BAE;<br>  &#x4F20;&#x8F93;&#x5C42; tcp/ip
+  &#x7F51;&#x7EDC;&#x5C42;
+  &#x6570;&#x636E;&#x94FE;&#x8DEF;&#x5C42;
+  &#x7269;&#x7406;&#x5C42;</p>
+<p>2&#x3001;<a href="http://user:pass@host.com:80/path?query=param@hash" target="_blank">http://user:pass@host.com:80/path?query=param@hash</a><br>
+3&#x3001;http&#x7F13;&#x5B58;cache-Control<br>
+  &#x5230;&#x671F;&#x8BBE;&#x7F6E;&#x6709;&#xFF1A;[max-age |s-maxage | max-stale]=seconds<br>
+  &#x53EF;&#x7F13;&#x5B58;&#x6027;&#xFF1A;[public|private|no-cache]<br>
+  &#x91CD;&#x65B0;&#x9A8C;&#x8BC1;:[must-revalidate | proxy-revalidate]<br>
+  res.writeHead(200,{<br>
+    &apos;Content-Type&apos;:&apos;text/javascript&apos;,<br>
+    &apos;Cache-Control&apos;:&apos;max-age=20,no-cache<br>
+    &apos; last-modified&apos;:&apos;123&apos; // &#x914D;&#x7F6E;&#x4EE3;&#x8868;&#x5728;&#x4E0B;&#x6B21;&#x518D;&#x53D1;&#x8BF7;&#x6C42;&#x7684;&#x65F6;&#x5019;&#x901A;&#x8FC7;&#x4F20;&#x56DE;&#x7684;if-modified-since&#x5E26;&#x56DE;&#x7684;&#x4E0A;&#x6B21;&#x8BBE;&#x7F6E;&#x7684;&#x65E5;&#x671F;&#x53C2;&#x6570;123&#x6765;&#x5224;&#x65AD;&#x662F;&#x5426;&#x6587;&#x4EF6;&#x505A;&#x4E86;&#x4FEE;&#x6539;&#xFF0C;&#x6CA1;&#x6709;&#x4FEE;&#x6539;&#x8FD4;&#x56DE; 304,<br>&apos;Etag&apos;:&apos;xxx&apos; //&#x914D;&#x7F6E;&#x4EE3;&#x8868;&#x5B9E;&#x4F53;&#x6807;&#x7B7E;&#x7B7E;&#x540D;&#xFF0C;&#x5728;&#x4E0B;&#x6B21;&#x518D;&#x8BF7;&#x6C42;&#x65F6;&#x4F20;&#x56DE;if-none-Match&#x53C2;&#x6570;&#x5E26;&#x56DE;xxx&#x53C2;&#x6570;&#x503C;&#xFF0C;&#x6765;&#x5224;&#x65AD;&#x662F;&#x5426;&#x548C;&#x4E0A;&#x6B21;&#x7684;&#x7B7E;&#x540D;&#x4E00;&#x81F4;
+  })<br></p>
+<p>  no-cache:&#x4EE3;&#x8868;&#x6BCF;&#x6B21;&#x53D1;&#x9001;&#x8BF7;&#x6C42;&#x540E;&#x90FD;&#x8981;&#x5148;&#x5411;&#x670D;&#x52A1;&#x7AEF;&#x53D1;&#x8BF7;&#x6C42;&#x505A;&#x9A8C;&#x8BC1;&#x662F;&#x5426;&#x9700;&#x8981;&#x8BFB;&#x53D6;&#x7F13;&#x5B58;&#x5185;&#x5BB9;&#xFF0C;&#x5FFD;&#x7565;&#x8FD4;&#x56DE;&#x7684;&#x8BF7;&#x6C42;&#x4E3B;&#x4F53;&#x5185;&#x5BB9;<br>
+ no-store:&#x4EE3;&#x8868;&#x4E0D;&#x8BBE;&#x7F6E;&#x4EFB;&#x4F55;&#x7F13;&#x5B58;&#x5185;&#x5BB9;,&#x6BCF;&#x6B21;&#x90FD;&#x8981;&#x53D1;&#x51FA;&#x8BF7;&#x6C42;</p>
+<p>1&#x3001;&#x5185;&#x5BB9;&#x5B89;&#x5168;&#x6D4B;&#x8BD5;CSP(content-security-policy):<a href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/CSP" target="_blank">https://developer.mozilla.org/zh-CN/docs/Web/HTTP/CSP</a>
+&#x5185;&#x5BB9;&#x5B89;&#x5168;&#x7B56;&#x7565;   (CSP) &#x662F;&#x4E00;&#x4E2A;&#x989D;&#x5916;&#x7684;&#x5B89;&#x5168;&#x5C42;&#xFF0C;&#x7528;&#x4E8E;&#x68C0;&#x6D4B;&#x5E76;&#x524A;&#x5F31;&#x67D0;&#x4E9B;&#x7279;&#x5B9A;&#x7C7B;&#x578B;&#x7684;&#x653B;&#x51FB;&#xFF0C;&#x5305;&#x62EC;&#x8DE8;&#x7AD9;&#x811A;&#x672C; (XSS) &#x548C;&#x6570;&#x636E;&#x6CE8;&#x5165;&#x653B;&#x51FB;&#x7B49;&#x3002;&#x65E0;&#x8BBA;&#x662F;&#x6570;&#x636E;&#x76D7;&#x53D6;&#x3001;&#x7F51;&#x7AD9;&#x5185;&#x5BB9;&#x6C61;&#x67D3;&#x8FD8;&#x662F;&#x6563;&#x53D1;&#x6076;&#x610F;&#x8F6F;&#x4EF6;&#xFF0C;&#x8FD9;&#x4E9B;&#x653B;&#x51FB;&#x90FD;&#x662F;&#x4E3B;&#x8981;&#x7684;&#x624B;&#x6BB5;
+&#x5BA2;&#x6237;&#x7AEF;&#xFF1A;</p>
+<p><meta http-equiv="Content-Security-Policy" content="default-src &apos;self&apos;; img-src https://*; child-src &apos;none&apos;;">
+&#x670D;&#x52A1;&#x7AEF;&#xFF1A;
+res.writeHead(200,{
+&apos;Conent-type:&apos;text/html&apos;,
+&apos;Content-Security-policy&apos;:&apos;default-src \&apos;self\&apos;&apos;
+})</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 网络协议文档">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="http状态码讲解.html" class="navigation navigation-next " aria-label="Next page: http状态码讲解">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"http基础","level":"1.9.1","depth":2,"next":{"title":"http状态码讲解","level":"1.9.2","depth":2,"path":"HTTP/http状态码讲解.md","ref":"HTTP/http状态码讲解.md","articles":[]},"previous":{"title":"网络协议文档","level":"1.9","depth":1,"path":"HTTP/README.md","ref":"HTTP/README.md","articles":[{"title":"http基础","level":"1.9.1","depth":2,"path":"HTTP/http基础.md","ref":"HTTP/http基础.md","articles":[]},{"title":"http状态码讲解","level":"1.9.2","depth":2,"path":"HTTP/http状态码讲解.md","ref":"HTTP/http状态码讲解.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"HTTP/http基础.md","mtime":"2018-08-25T14:15:07.954Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-22T10:25:47.014Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

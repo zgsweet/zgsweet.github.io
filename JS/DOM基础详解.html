@@ -1,0 +1,982 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>DOM基础详解 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../ES6/" />
+    
+    
+    <link rel="prev" href="JS面向对象.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    笔记本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../HTML_BASE/">
+            
+                <a href="../HTML_BASE/">
+            
+                    
+                    HTML文档
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../HTML_BASE/Html5无刷新URL.html">
+            
+                <a href="../HTML_BASE/Html5无刷新URL.html">
+            
+                    
+                    Html5无刷新URL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../HTML_BASE/页面渲染流程.html">
+            
+                <a href="../HTML_BASE/页面渲染流程.html">
+            
+                    
+                    页面渲染流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../CSS/">
+            
+                <a href="../CSS/">
+            
+                    
+                    CSS文档
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../CSS/css常见布局.html">
+            
+                <a href="../CSS/css常见布局.html">
+            
+                    
+                    css常见布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    JS文档
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="JS面向对象.html">
+            
+                <a href="JS面向对象.html">
+            
+                    
+                    JS面向对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.2" data-path="DOM基础详解.html">
+            
+                <a href="DOM基础详解.html">
+            
+                    
+                    DOM基础详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../ES6/">
+            
+                <a href="../ES6/">
+            
+                    
+                    ES6文档
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../ES6/es6基础.html">
+            
+                <a href="../ES6/es6基础.html">
+            
+                    
+                    es6基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../ES6/模块区别.html">
+            
+                <a href="../ES6/模块区别.html">
+            
+                    
+                    模块区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../ES6/babel-preset-env使用指南.html">
+            
+                <a href="../ES6/babel-preset-env使用指南.html">
+            
+                    
+                    babel-preset-env使用指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../Node/">
+            
+                <a href="../Node/">
+            
+                    
+                    NodeJS服务端
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../Node/npmvsyarn之对比.html">
+            
+                <a href="../Node/npmvsyarn之对比.html">
+            
+                    
+                    Npm vs Yarn 之对比
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../Node/PM2基础操作.html">
+            
+                <a href="../Node/PM2基础操作.html">
+            
+                    
+                    PM2基础操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../Node/Redis来实现定时任务.html">
+            
+                <a href="../Node/Redis来实现定时任务.html">
+            
+                    
+                    Redis来实现定时任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../Config/">
+            
+                <a href="../Config/">
+            
+                    
+                    配置文件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../Config/editorconfig.html">
+            
+                <a href="../Config/editorconfig.html">
+            
+                    
+                    Editorconfig配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../Config/eslint.html">
+            
+                <a href="../Config/eslint.html">
+            
+                    
+                    Eslint配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../Language/">
+            
+                <a href="../Language/">
+            
+                    
+                    开发语言
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../Language/react基础.html">
+            
+                <a href="../Language/react基础.html">
+            
+                    
+                    react基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../Language/react-router.html">
+            
+                <a href="../Language/react-router.html">
+            
+                    
+                    react-router
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../HTTP/">
+            
+                <a href="../HTTP/">
+            
+                    
+                    网络协议文档
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../HTTP/http基础.html">
+            
+                <a href="../HTTP/http基础.html">
+            
+                    
+                    http基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../HTTP/http状态码讲解.html">
+            
+                <a href="../HTTP/http状态码讲解.html">
+            
+                    
+                    http状态码讲解
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../Safety/">
+            
+                <a href="../Safety/">
+            
+                    
+                    安全性能
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../Safety/web安全-XSS.html">
+            
+                <a href="../Safety/web安全-XSS.html">
+            
+                    
+                    web安全-XSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../Safety/前端监控和前端埋点方案设计.html">
+            
+                <a href="../Safety/前端监控和前端埋点方案设计.html">
+            
+                    
+                    前端监控和前端埋点方案设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../BuildTools/">
+            
+                <a href="../BuildTools/">
+            
+                    
+                    构建工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../BuildTools/webpack基础.html">
+            
+                <a href="../BuildTools/webpack基础.html">
+            
+                    
+                    webpack基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../BuildTools/Git基础操作.html">
+            
+                <a href="../BuildTools/Git基础操作.html">
+            
+                    
+                    Git基础操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../CommTools/">
+            
+                <a href="../CommTools/">
+            
+                    
+                    公共具体
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../Other/">
+            
+                <a href="../Other/">
+            
+                    
+                    其他
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../Other/参考书籍.html">
+            
+                <a href="../Other/参考书籍.html">
+            
+                    
+                    参考书籍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../Other/读取摘要.html">
+            
+                <a href="../Other/读取摘要.html">
+            
+                    
+                    读取摘要
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="../Other/前端技能汇总.html">
+            
+                <a href="../Other/前端技能汇总.html">
+            
+                    
+                    前端技能汇总
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >DOM基础详解</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="dom-&#x6587;&#x6863;&#x5BF9;&#x8C61;&#x6A21;&#x578B;">DOM &#x6587;&#x6863;&#x5BF9;&#x8C61;&#x6A21;&#x578B;</h2>
+<h3 id="dom&#x7684;&#x7EA7;&#x522B;&#xFF1A;">DOM&#x7684;&#x7EA7;&#x522B;&#xFF1A;</h3>
+<pre><code>1&#x3001;DOM1&#x7EA7;&#x4E3B;&#x8981;&#x5B9A;&#x4E49;HTML&#x548C;XML&#x6587;&#x6863;&#x7684;&#x5E95;&#x5C42;&#x7ED3;&#x6784;&#xFF0C;&#x5728;DOM1&#x4E2D;&#xFF0C;DOM&#x7531;&#x4E24;&#x4E2A;&#x6A21;&#x5757;&#x7EC4;&#x6210;&#xFF1A;DOM Core&#xFF08;DOM&#x6838;&#x5FC3;&#xFF09;&#x548C;DOM HTML,
+&#x5176;&#x4E2D;DOM Core&#x89C4;&#x5B9A;&#x4E86;&#x57FA;&#x4E8E;XML&#x7684;&#x6587;&#x6863;&#x7ED3;&#x6784;&#x6807;&#x51C6;&#xFF0C;&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x6807;&#x51C6;&#x7B80;&#x5316;&#x4E86;&#x5BF9;&#x6587;&#x6863;&#x4E2D;&#x4EFB;&#x610F;&#x90E8;&#x5206;&#x7684;&#x623F;&#x5C4B;&#x548C;&#x64CD;&#x4F5C;&#xFF0C;DOM HTML&#x5219;&#x5728;
+DOM&#x6838;&#x5FC3;&#x57FA;&#x7840;&#x4E0A;&#x52A0;&#x4EE5;&#x6269;&#x5C55;&#xFF0C;&#x6DFB;&#x52A0;&#x4E86;&#x9488;&#x5BF9;HTML&#x7684;&#x5BF9;&#x8C61;&#x548C;&#x65B9;&#x6CD5;&#xFF0C;&#x5982;javascript&#x4E2D;&#x7684;Document&#x5BF9;&#x8C61;&#x3002;&lt;br/&gt;
+2&#x3001;DOM2&#x7EA7;&#x5728;&#x539F;&#x6765;&#x7684;DOM&#x7684;&#x57FA;&#x7840;&#x4E0A;&#x53C8;&#x6269;&#x5145;&#x4E86;&#x9F20;&#x6807;&#x3001;&#x7528;&#x6237;&#x754C;&#x9762;&#x4E8B;&#x4EF6;&#x3001;&#x8303;&#x56F4;&#x3001;&#x904D;&#x5386;&#x7B49;&#x7EC6;&#x5206;&#x6A21;&#x5757;&#xFF0C;&#x800C;&#x4E14;&#x901A;&#x8FC7;&#x5BF9;&#x8C61;
+&#x63A5;&#x53E3;&#x589E;&#x52A0;&#x4E86;&#x5BF9;CSS&#x7684;&#x652F;&#x6301;&#x3002;&#x5728;DOM2&#x4E2D;&#x5F15;&#x5165;&#x4E86;&#x4E00;&#x4E0B;&#x6A21;&#x5757;&#xFF0C;&#x5728;&#x6A21;&#x5757;&#x5305;&#x542B;&#x4E86;&#x4F17;&#x591A;&#x65B0;&#x7C7B;&#x578B;&#x548C;&#x65B0;&#x63A5;&#x53E3;&#xFF1A;&lt;br/&gt;
+  &#x300B;&#x3001;DOM&#x89C6;&#x56FE;(DOM Views):&#x5B9A;&#x4E49;&#x4E86;&#x8DDF;&#x8E2A;&#x4E0D;&#x540C;&#x6587;&#x6863;&#x89C6;&#x56FE;&#x7684;&#x63A5;&#x53E3;&lt;br/&gt;
+  &#x300B;&#x3001;DOM&#x4E8B;&#x4EF6;&#xFF08;DOM Events&#xFF09;:&#x5B9A;&#x4E49;&#x4E86;&#x4E8B;&#x4EF6;&#x548C;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x7684;&#x63A5;&#x53E3;&lt;br/&gt;
+  &#x300B;&#x3001;DOM&#x6837;&#x5F0F;(DOM Style):&#x5B9A;&#x4E49;&#x4E86;&#x57FA;&#x4E8E;CSS&#x4E3A;&#x5143;&#x7D20;&#x5E94;&#x7528;&#x6837;&#x5F0F;&#x7684;&#x63A5;&#x53E3;&lt;br/&gt;
+  &#x300B;&#x3001;DOM&#x904D;&#x5386;&#x548C;&#x8303;&#x56F4;&#xFF1A;&#x5B9A;&#x4E49;&#x4E86;&#x904D;&#x5386;&#x548C;&#x64CD;&#x4F5C;&#x6587;&#x6863;&#x6811;&#x7684;&#x63A5;&#x53E3;&lt;br/&gt;
+3&#x3001;DOM3&#x7EA7;&#x8FDB;&#x4E00;&#x6B65;&#x6269;&#x5C55;&#x4E86;DOM&#xFF0C;&#x5728;DOM3&#x4E2D;&#x5F15;&#x5165;&#x4E86;&#x4EE5;&#x4E0B;&#x6A21;&#x5757;&#xFF1A;&lt;br/&gt;
+  &#x300B;&#x3001;DOM&#x52A0;&#x8F7D;&#x548C;&#x4FDD;&#x6301;&#x6A21;&#x5757;(DOM Load and Save)&#xFF1A;&#x5F15;&#x5165;&#x4E86;&#x4EE5;&#x7EDF;&#x4E00;&#x65B9;&#x5F0F;&#x52A0;&#x8F7D;&#x548C;&#x4FDD;&#x5B58;&#x6587;&#x6863;&#x65B9;&#x6CD5;&lt;br/&gt;
+  &#x300B;&#x3001;DOM&#x9A8C;&#x8BC1;&#x6A21;&#x5757;(DOM Validation)&#xFF1A;&#x5B9A;&#x4E49;&#x4E86;&#x9A8C;&#x8BC1;&#x6587;&#x6863;&#x7684;&#x65B9;&#x6CD5;&lt;br/&gt;
+  &#x300B;&#x3001;DOM&#x6838;&#x5FC3;&#x7684;&#x6269;&#x5C55;(DOM Style)&#xFF1A;&#x652F;&#x6301;XML1.0&#x89C4;&#x8303;&#x3001;&#x6D89;&#x53CA;XML Infoset&#x3001;XPath&#x548C;XML Base
+</code></pre><h3 id="dhtml-dynamic-html&#x6307;&#x52A8;&#x6001;html-&#x4E0D;&#x662F;w3c&#x6807;&#x51C6;&#xFF0C;&#x4E0D;&#x662F;&#x7531;&#x4E07;&#x7EF4;&#x7F51;&#x8054;&#x76DF;w3c&#x89C4;&#x5B9A;&#x7684;&#x6807;&#x51C6;&#xFF0C;&#x662F;&#x4E00;&#x4E2A;&#x8425;&#x9500;&#x672F;&#x8BED;&#xFF0C;&#x88AB;&#x7F51;&#x666F;&#x516C;&#x53F8;">DHTML (Dynamic HTML)&#x6307;&#x52A8;&#x6001;HTML &#x4E0D;&#x662F;W3C&#x6807;&#x51C6;&#xFF0C;&#x4E0D;&#x662F;&#x7531;&#x4E07;&#x7EF4;&#x7F51;&#x8054;&#x76DF;(W3C)&#x89C4;&#x5B9A;&#x7684;&#x6807;&#x51C6;&#xFF0C;&#x662F;&#x4E00;&#x4E2A;&#x8425;&#x9500;&#x672F;&#x8BED;&#xFF0C;&#x88AB;&#x7F51;&#x666F;&#x516C;&#x53F8;</h3>
+<p>&#x548C;&#x5FAE;&#x8F6F;&#x516C;&#x53F8;&#x7528;&#x6765;&#x63CF;&#x8FF0;4.X&#x4EE3;&#x6D4F;&#x89C8;&#x5668;&#x5E94;&#x5F53;&#x652F;&#x6301;&#x7684;&#x65B0;&#x6280;&#x672F;&#x3002;</p>
+<h2 id="&#x6587;&#x6863;&#x7684;&#x7C7B;&#x578B;">&#x6587;&#x6863;&#x7684;&#x7C7B;&#x578B;</h2>
+<p>&#x901A;&#x7528;&#x6807;&#x8BB0;&#x8BED;&#x8A00;&#xFF08;1969&#x5E74; GML&#xFF09;--&gt;&#x6807;&#x51C6;&#x901A;&#x7528;&#x6807;&#x8BB0;&#x8BED;&#x8A00;(1985&#x5E74; SGML)--&gt;&#x8D85;&#x6587;&#x672C;&#x6807;&#x8BB0;&#x8BED;&#x8A00;(1993&#x5E74; HTML)--&gt;&#x53EF;&#x6269;&#x5C55;&#x6807;&#x8BB0;&#x8BED;&#x8A00;(1998&#x5E74; XML)
+1&#x3001;&#x8D85;&#x6587;&#x672C;&#x6807;&#x8BB0;&#x8BED;&#x8A00;&#xFF1A;HTML(Help Text Markup Language)W3C&#x4E07;&#x7EF4;&#x7F51;&#x8054;&#x76DF;&#x7EF4;&#x62A4;&#xFF0C;&#x7528;&#x6765;&#x663E;&#x793A;&#x6570;&#x636E;&#xFF0C;&#x91CD;&#x70B9;&#x662F;&#x5982;&#x4F55;&#x663E;&#x793A;&#x6570;&#x636E;&#xFF1B;&#x4F7F;&#x7528;&#x5B9A;&#x4E49;&#x7684;&#x6807;&#x51C6;&#x6807;&#x7B7E;&#xFF0C;HTML&#x6807;&#x7B7E;&#x4F5C;&#x4E3A;&#x6839;&#x5143;&#x7D20;.<br>
+2&#x3001;&#x53EF;&#x6269;&#x5C55;&#x6807;&#x8BB0;&#x8BED;&#x8A00;&#xFF1A;XML(Extensable Markup Language)&#xFF0C;&#x7528;&#x6765;&#x63CF;&#x8FF0;&#x6570;&#x636E;&#xFF0C;&#x91CD;&#x70B9;&#x662F;&#x4EC0;&#x4E48;&#x662F;&#x6570;&#x636E;&#xFF0C;&#x5982;&#x4F55;&#x5B58;&#x653E;&#x6570;&#x636E;
+&#x5907;&#x6CE8;&#xFF1A;XHTML&#xFF08;&#x65E9;&#x671F; HTML&#x4E0E;xml&#x5408;&#x5E76;&#x4F5C;&#x7528;&#xFF09;</p>
+<h2 id="&#x8282;&#x70B9;&#x7C7B;&#x578B;&#xFF1A;">&#x8282;&#x70B9;&#x7C7B;&#x578B;&#xFF1A;</h2>
+<p>&#x8282;&#x70B9;&#x7C7B;&#x578B;   &#x5B57;&#x7B26;&#x5E38;&#x91CF;     &#x6570;&#x503C;&#x5E38;&#x91CF;<br>
+&#x5143;&#x7D20;&#x8282;&#x70B9;  ELEMENT_NODE   1     &#xFF08;&#x62E5;&#x6709;&#x5B50;&#x8282;&#x70B9;&#x548C;&#x6587;&#x672C;&#xFF0C;&#x662F;&#x552F;&#x4E00;&#x80FD;&#x62E5;&#x6709;&#x5C5E;&#x6027;&#x7684;&#x8282;&#x70B9;&#x7C7B;&#x578B;&#xFF09;<br>
+&#x5C5E;&#x6027;&#x8282;&#x70B9;  ATTRIBUTE_NODE 2 &#xFF08;&#x5143;&#x7D20;&#x4E2D;&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x662F;&#x9644;&#x5C5E;&#x4E8E;&#x5143;&#x7D20;&#x7684;&#xFF0C;&#x662F;&#x5305;&#x542B;&#x4ED6;&#x7684;&#x5143;&#x7D20;&#x8282;&#x70B9;&#x7684;&#x4E00;&#x90E8;&#x5206;&#xFF0C;&#x4E0D;&#x5C5E;&#x4E8E;&#x6587;&#x6863;&#x6811;&#x7684;&#x4E00;&#x90E8;&#x5206;&#xFF09;<br>
+&#x6587;&#x672C;&#x8282;&#x70B9;  TEXT_NODE      3 <br>
+&#x6CE8;&#x91CA;&#x8282;&#x70B9;  COMMENT_NODE   8  <br>
+&#x6587;&#x6863;&#x8282;&#x70B9;  DOCUMENT_NODE  9   <br>
+&#x6587;&#x6863;&#x7C7B;&#x578B;&#x8282;&#x70B9;  DOCUMENT_TYPE_NODE  10 <br></p>
+<hr>
+<p>&#x6587;&#x6863;&#x7247;&#x6BB5;&#x8282;&#x70B9;&#xFF0C;DocumentFragment&#x3002;
+&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x5360;&#x4F4D;&#x8282;&#x70B9;&#xFF0C;&#x5E76;&#x4E0D;&#x5177;&#x6709;&#x7279;&#x6B8A;&#x5B9A;&#x4E49;&#x3002;&#x7C7B;&#x4F3C;&#x4E8E;&#x4E00;&#x4E2A;&#x672A;&#x5B9A;&#x4E49;&#x7684;&#x5BB9;&#x5668;&#xFF0C;&#x901A;&#x8FC7;:
+var frag = document.createDocumentFragment();
+&#x521B;&#x5EFA;&#x8FD9;&#x4E2A;&#x5BB9;&#x5668;&#xFF0C;&#x518D;&#x5F80;&#x8FD9;&#x4E2A;&#x5BB9;&#x5668;&#x91CC;&#x6DFB;&#x52A0;&#x8981;&#x6DFB;&#x52A0;&#x7684;element:
+frag.appendChild(&quot;li&quot;);
+&#x7136;&#x540E;&#x5229;&#x7528;&#x8FD9;&#x4E2A;&#x5BB9;&#x5668;frag&#xFF0C;&#x628A;&#x91CC;&#x9762;&#x88C5;&#x7684;&#x5143;&#x7D20;&#x6DFB;&#x52A0;&#x5230;document&#x6587;&#x6863;&#x6D41;&#x4E2D;&#xFF1A;</p>
+<hr>
+<pre><code>&#x5224;&#x65AD;&#x8FD9;&#x4E2A;&#x4F4D;&#x7F6E;&#x662F;&#x5426;&#x4E3A;&#x5143;&#x7D20;&#x8282;&#x70B9;&#xFF1A;
+&lt;body&gt;
+&lt;div id=&quot;container&quot;&gt;
+&lt;script&gt;
+var divNode = document.getElementById(&quot;container&quot;);
+/* if(divNode.nodeType==Node.ELEMENT_NODE){alert(&quot;Node is an element.&quot;);}* /
+if (divNode.nodeType == 1){
+alert(&quot;Node is an element.&quot;);
+}
+&lt;/script&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+
+IE&#x6D4F;&#x89C8;&#x5668;&#x6CA1;&#x6709;&#x5185;&#x7F6E;node&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x4E0D;&#x80FD;&#x5224;&#x65AD;nodetype&#x7684;&#x503C;&#x662F;&#x5426;&#x7B49;&#x4E8E;Node.ELEMENT_NODE&#xFF0C;&#x4E0D;&#x80FD;&#x901A;&#x8FC7;&#x201C;&#x5B57;&#x7B26;&#x5E38;&#x91CF;&#x201D;&#x5224;&#x65AD;&#xFF0C;&#x4F46;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x201C;&#x6570;&#x503C;&#x5E38;&#x91CF;&#x201D;&#x6765;&#x5224;&#x65AD;&#x3002;
+
+&#x901A;&#x8FC7;&#x6570;&#x503C;&#x5E38;&#x91CF;&#x6765;&#x5224;&#x65AD;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x7C7B;&#x578B;&#x662F;&#x6240;&#x6709;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x90FD;&#x517C;&#x5BB9;&#x7684;&#x3002;
+</code></pre><h2 id="dom-ready">DOM Ready:</h2>
+<pre><code>&gt; &#x6D4F;&#x89C8;&#x5668;&#x901A;&#x8FC7;&#x6E32;&#x67D3;&#x5F15;&#x64CE;&#x5C06;html&#x89E3;&#x6790;&#x4E3A;dom&#x8282;&#x70B9;
+&gt; &#x9875;&#x9762;&#x4E0A;&#x6240;&#x6709;html&#x90FD;&#x8F6C;&#x6362;&#x4E3A;&#x8282;&#x70B9;&#x4EE5;&#x540E;&#x53EB;&#x505A;dom&#x6811;&#x6784;&#x5EFA;&#x5B8C;&#x6BD5;&#xFF0C;&#x7B80;&#x79F0;dom ready
+&gt; &#x6E32;&#x67D3;&#x5F15;&#x64CE;&#x804C;&#x8D23;&#x5C06;&#x8BF7;&#x6C42;&#x7684;&#x5185;&#x5BB9;&#x663E;&#x793A;&#x5230;&#x6D4F;&#x89C8;&#x5668;&#x5C4F;&#x5E55;&#x4E0A;&#xFF0C;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x53EF;&#x4EE5;&#x663E;&#x793A;html&#x3001;xml&#x3001;&#x56FE;&#x7247;&#xFF0C;&#x901A;&#x8FC7;&#x63D2;&#x4EF6;&#x6269;&#x5C55;&#x53EF;&#x4EE5;&#x663E;&#x793A;&#x5176;&#x4ED6;&#x7C7B;&#x578B;&#x7684;&#x6587;&#x6863;
+</code></pre><h3 id="&#x6E32;&#x67D3;&#x5F15;&#x64CE;&#x7684;&#x6E32;&#x67D3;&#x8FC7;&#x7A0B;">&#x6E32;&#x67D3;&#x5F15;&#x64CE;&#x7684;&#x6E32;&#x67D3;&#x8FC7;&#x7A0B;</h3>
+<pre><code>&#x89E3;&#x6790;html&#x3001;&#x6784;&#x5EFA;dom&#x6811;(&#x5C06;&#x6807;&#x7B7E;&#x8F6C;&#x5316;&#x4E3A;&#x8282;&#x70B9;)
+&#x6784;&#x5EFA;&#x6E32;&#x67D3;&#x6811;&#xFF08;&#x89E3;&#x6790;&#x6837;&#x5F0F;&#x4FE1;&#x606F;&#xFF09;(&#x5916;&#x90E8;css&#x6587;&#x4EF6;&#x3001;style&#x6807;&#x7B7E;)
+&#x5E03;&#x5C40;&#x6E32;&#x67D3;&#x6811;&#xFF08;&#x5E03;&#x5C40;dom&#x8282;&#x70B9;&#xFF09;(&#x786E;&#x5B9A;&#x6BCF;&#x4E2A;&#x8282;&#x70B9;&#x5728;&#x5C4F;&#x5E55;&#x4E0A;&#x7684;&#x786E;&#x5207;&#x5750;&#x6807;)
+&#x7ED8;&#x5236;&#x6E32;&#x67D3;&#x6811;&#xFF08;&#x7ED8;&#x5236;dom&#x8282;&#x70B9;&#xFF09;(&#x904D;&#x5386;&#x6E32;&#x67D3;&#x6811;&#xFF0C;&#x4F7F;&#x7528;UI&#x540E;&#x7AEF;&#x5C42;&#x7ED8;&#x5236;&#x6BCF;&#x4E2A;&#x8282;&#x70B9;)
+&#x6269;&#x5C55;&#x9605;&#x8BFB;&#xFF1A;http://kb.cnblogs.com/page/129756
+</code></pre><h3 id="domready&#x5B9E;&#x73B0;&#x7B56;&#x7565;">DOMReady&#x5B9E;&#x73B0;&#x7B56;&#x7565;</h3>
+<pre><code>&#x5728;&#x9875;&#x9762;&#x7684;DOM&#x6811;&#x521B;&#x5EFA;&#x5B8C;&#x6210;&#x540E;&#xFF08;&#x4E5F;&#x5C31;&#x662F;HTML&#x89E3;&#x6790;&#x5730;&#x4E00;&#x6B65;&#x5B8C;&#x6210;&#xFF09;&#x5373;&#x51FA;&#x53D1;&#xFF0C;&#x800C;&#x65E0;&#x9700;&#x7B49;&#x5F85;&#x5176;&#x4ED6;&#x8D44;&#x6E90;&#x7684;&#x52A0;&#x8F7D;&#xFF0C;&#x5373;DOMReady&#x5B9E;&#x73B0;&#x7B56;&#x7565;
+&#x652F;&#x6301;DOMConentLoaded&#x4E8B;&#x4EF6;&#x7684;&#x5C31;&#x662F;DOMConentLoaded&#x4E8B;&#x4EF6;
+&#x4E0D;&#x652F;&#x6301;&#x7684;&#xFF0C;&#x5C31;&#x7528;&#x6765;&#x81EA;Diego Perini&#x53D1;&#x73B0;&#x7684;&#x8457;&#x540D;Hack&#x517C;&#x5BB9;&#x3002;&#x517C;&#x5BB9;&#x539F;&#x7406;&#x5927;&#x6982;&#x5C31;&#x662F;&#xFF0C;&#x901A;&#x8FC7;IE&#x4E2D;&#x7684;document.documentElement.doScroll(&quot;left&quot;)&#x6765;&#x5224;&#x65AD;DOM&#x6811;&#x662F;&#x5426;&#x521B;&#x5EFA;&#x5B8C;&#x6BD5;&#x3002;
+&#x8BF4;&#x660E;&#xFF1A;window.onload&#x4E8B;&#x4EF6;&#xFF1A;&#x6D4F;&#x89C8;&#x5668;&#x7ED8;&#x5236;&#x5B8C;dom&#x8282;&#x70B9;&#xFF0C;&#x5728;&#x52A0;&#x8F7D;&#x9875;&#x9762;&#x4E0A;&#x7684;&#x6240;&#x6709;&#x8D44;&#x6E90;&#x4EE5;&#x540E;&#x624D;&#x6267;&#x884C;&#x6211;&#x4EEC;&#x81EA;&#x5DF1;&#x5B9A;&#x4E49;&#x7684;&#x4EE3;&#x7801;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x5728;&#x6587;&#x6863;&#x89E3;&#x6790;&#x6E32;&#x67D3;&#x3001;&#x8D44;&#x6E90;&#x4EF7;&#x5728;&#x5B8C;&#x6210;&#x4E4B;&#x524D;&#x4E0D;&#x8BA9;js&#x811A;&#x672C;&#x6267;&#x884C;&#xFF0C;&#x4F46;&#x5F53;&#x8D44;&#x6E90;&#x8FC7;&#x591A;&#x662F;&#x4FBF;&#x51FA;&#x73B0;&#x77ED;&#x677F;&#xFF0C;&#x5E76;&#x4E0D;&#x5B9E;&#x7528;&#x3002;
+domReady&#x7684;&#x5B9E;&#x73B0;&#xFF1A;
+```
+function myReady(fn){
+    // &#x5BF9;&#x4E8E;&#x73B0;&#x4EE3;&#x6D4F;&#x89C8;&#x5668;&#xFF0C;&#x5BF9;DOMContentLoaded&#x4E8B;&#x4EF6;&#x7684;&#x5904;&#x7406;&#x91C7;&#x7528;&#x6807;&#x51C6;&#x7684;&#x4E8B;&#x4EF6;&#x7ED1;&#x5B9A;&#x65B9;&#x5F0F;
+    if(document.addEventListener){
+        document.addEventListener(&quot;DOMContentLoaded&quot;, fn, false); // &#x5728;&#x5192;&#x6CE1;&#x9636;&#x6BB5;&#x6355;&#x83B7;
+    } else {
+        IEContentLoaded(fn);
+    }
+
+    // IE&#x6A21;&#x62DF;DOMContentLoaded
+    function IEContentLoaded(fn){
+        var d = window.document;
+        var done = false;
+    // &#x53EA;&#x6267;&#x884C;&#x4E00;&#x6B21;&#x7684;&#x7528;&#x6237;&#x56DE;&#x8C03;&#x51FD;&#x6570;init()
+    var init = function(){
+        if(!done){
+            done = true;
+            fn();
+        }
+    }
+
+    (function(){
+        try{
+        // DOM&#x6811;&#x672A;&#x521B;&#x5EFA;&#x4E4B;&#x524D;&#x8C03;&#x7528;doScroll&#x4F1A;&#x629B;&#x51FA;&#x9519;&#x8BEF;
+        d.documentElement.doScroll(&apos;left&apos;);
+        } catch(e){
+        // &#x5EF6;&#x8FDF;&#x518D;&#x8BD5;&#x4E00;&#x6B21;&#xFF0C;&#x8C03;&#x7528;&#x51FD;&#x6570;&#x81EA;&#x8EAB;&#x7684;&#x4E8B;&#x4EF6;
+        setTimeout(arguments.callee, 50);
+        return;
+        }
+        // &#x6CA1;&#x6709;&#x9519;&#x8BEF;&#x5C31;&#x8868;&#x793A;DOM&#x6811;&#x521B;&#x5EFA;&#x5B8C;&#x6BD5;&#xFF0C;&#x7136;&#x540E;&#x7ACB;&#x9A6C;&#x6267;&#x884C;&#x7528;&#x6237;&#x56DE;&#x8C03;
+        init();
+    })();
+
+    // &#x76D1;&#x542C;document&#x7684;&#x52A0;&#x8F7D;&#x72B6;&#x6001;
+    d.onreadystatechange = function(){
+        // &#x5982;&#x679C;&#x7528;&#x6237;&#x662F;&#x5728;domReady&#x4E4B;&#x540E;&#x7ED1;&#x5B9A;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x5C31;&#x7ACB;&#x9A6C;&#x6267;&#x884C;
+        if(d.readyState == &apos;complete&apos;) {
+            d.onreadtstatechange = null;
+            init();
+        }
+       }
+    }
+}
+</code></pre><pre><code>    DOM&#x6587;&#x6863;&#x52A0;&#x8F7D;&#x7684;&#x6B65;&#x9AA4;&#x4E3A;
+    1.&#x89E3;&#x6790;HTML&#x7ED3;&#x6784;
+    2.&#x52A0;&#x8F7D;&#x5916;&#x90E8;&#x811A;&#x672C;&#x548C;&#x6837;&#x5F0F;&#x6587;&#x4EF6;
+    3.&#x89E3;&#x6790;&#x5E76;&#x6267;&#x884C;&#x811A;&#x672C;&#x6587;&#x4EF6;
+    4&#x3002;DOM&#x6811;&#x6784;&#x5EFA;&#x5B8C;&#x6210;  &#x4F1A;&#x89E6;&#x53D1;DOMcontentLoaded&#x4E8B;&#x4EF6;
+    5.&#x52A0;&#x8F7D;&#x56FE;&#x7247;&#x7B49;&#x5916;&#x90E8;&#x6587;&#x4EF6;
+   &#x5907;&#x6CE8;&#xFF1A; &#x5BF9;&#x4E8E;&#x6E32;&#x67D3;&#x5F15;&#x64CE;&#x7684;&#x5DE5;&#x4F5C;&#x6D41;&#x7A0B;&#x7684;&#x4E86;&#x89E3;&#xFF0C;&#x6709;&#x52A9;&#x4E8E;&#x5199;&#x51FA;&#x66F4;&#x597D;&#x7528;&#x6237;&#x4F53;&#x9A8C;&#x7684;&#x4EE3;&#x7801;&#x3002;onload&#x4E8B;&#x4EF6;&#x662F;&#x8981;&#x5728;&#x6240;&#x6709;&#x8BF7;&#x6C42;&#x90FD;&#x5B8C;&#x6210;&#x4E4B;&#x540E;&#x624D;&#x6267;&#x884C;&#xFF0C;&#x800C;domReady&#x5229;&#x7528;hack&#x6280;&#x672F;&#xFF0C;&#x5728;&#x52A0;&#x8F7D;&#x5B8C;dom&#x6811;&#x4E4B;&#x540E;&#x5C31;&#x80FD;&#x6267;&#x884C;&#xFF0C;&#x6240;&#x4EE5;domReady&#x6BD4;onload&#x6267;&#x884C;&#x65F6;&#x95F4;&#x66F4;&#x65E9;&#xFF0C;&#x5EFA;&#x8BAE;&#x91C7;&#x7528;domReady&#x3002;&#x540C;&#x65F6;&#x4E5F;&#x53EF;&#x4EE5;&#x53BB;&#x4E86;&#x89E3;&#x5404;&#x5927;js&#x6846;&#x67B6;&#xFF0C;&#x4F8B;&#x5982;jquery&#xFF0C;ext&#x7B49;&#xFF0C;&#x4ED6;&#x4EEC;&#x7684;domReady&#x7684;&#x5B9E;&#x73B0;&#x673A;&#x5236;
+
+## &#x5143;&#x7D20;&#x8282;&#x70B9;&#x7684;&#x5224;&#x65AD;
+</code></pre><pre><code>&#x5143;&#x7D20;&#x8282;&#x70B9;&#x7C7B;&#x578B;&#x5224;&#x65AD;
+/*isElement*/
+var testDiv = document.createElement(&apos;div&apos;);
+var isElement = function(obj){
+    if(obj &amp;&amp; obj.nodeType === 1){
+        if (window.Node &amp;&amp; (obj instanceof Node)) {
+            return true;
+        }
+        try{
+            testDiv.appendChild(obj);
+            testDiv.removeChild(obj);
+        } catch(e) {
+            return false;
+        }
+        return false;
+    }
+    return false;
+}
+/*isXML*/
+var isXML = function (document) {
+    return (!!document.xmlVersion) || (!!docuemnt.xml) || (toString.call(document) == &apos;[object XMLDocument]&apos;) || ( document.nodeType == 9 &amp;&amp; document.documentElement.nodeName != &apos;HTML&apos;);
+}
+/*2*/
+var isXML = function(doc){
+    return doc.createElement(&apos;p&apos;).nodeName != doc.createElement(&apos;P&apos;).nodeName;
+}
+/*isHTML*/
+var isHTML = function(doc){
+    return doc.createElement(&apos;p&apos;).nodeName === doc.createElement(&apos;P&apos;).nodeName;
+}
+/*&#x81EA;&#x5B9A;&#x4E49;&#x65B9;&#x6CD5;&#x6765;&#x5224;&#x65AD;&#x7ED3;&#x70B9;&#x4E4B;&#x95F4;&#x7684;&#x5305;&#x542B;&#x5173;&#x7CFB;&#xFF0C;&#x517C;&#x5BB9;&#x6240;&#x6709;&#x6D4F;&#x89C8;&#x5668;*/
+function fixContains (pNode, cNode) {
+    try{
+        while(cNode = cNode.parentNode){
+            if(cNode === pNode){
+                return true;
+            }
+        }
+        return false;
+    }catch(e){
+        return false;
+    }
+}
+</code></pre><pre><code>&#x6765;&#x5224;&#x65AD;&#x662F;&#x5426;&#x662F; XML &#x6587;&#x6863;&#xFF1A;&#x5224;&#x65AD;&#x8282;&#x70B9;&#x540D;&#x662F;&#x5426;&#x662F;&#x533A;&#x5206;&#x5927;&#x5C0F;&#x5199;&#x7684;&#xFF0C;HTML&#x6587;&#x6863;&#x8282;&#x70B9;&#x540D;&#x4E0D;&#x533A;&#x5206;&#x5927;&#x5C0F;&#x5199;&#x5224;&#x65AD;XML&#x548C;HTML&#x7684;&#x65B9;&#x6CD5;&#xFF1A;
+&#x5148;&#x4F7F;&#x7528;isElememt&#x5224;&#x65AD;&#x662F;&#x5426;&#x4E3A;&#x5143;&#x7D20;&#x8282;&#x70B9;&#xFF0C;&#x518D;&#x7528;creatElement&#x5224;&#x65AD;&#x5143;&#x7D20;&#x540D;&#x5927;&#x5199;&#x5C0F;&#x5199;&#x662F;&#x5426;&#x90FD;&#x7B49;&#x540C;&#xFF0C;&#x5927;&#x5C0F;&#x5199;&#x4E0D;&#x7B49;&#x540C;&#x4E3A;XML&#xFF0C;&#x7B49;&#x540C;&#x4E3A;HTML
+</code></pre><p>var isXML = function(doc){
+return doc.createElement(&apos;div&apos;).nodeName !== doc.createElement(&apos;DIV&apos;).nodeName;
+}
+&#x5224;&#x65AD;&#x5305;&#x6DB5;&#x5173;&#x7CFB;contains&#x7684;&#x65B9;&#x6CD5; &#x5404;&#x6D4F;&#x89C8;&#x5668;&#x901A;&#x7528;&#x7684;: &#x53C2;&#x8003;&#x4EE3;&#x7801;&#xFF1A;</p>
+<p><div id="p-node">
+        <div id="c-node">&#x5B50;&#x8282;&#x70B9;&#x5185;&#x5BB9;</div>
+    &lt;/div&gt;</div></p>
+<p><script type="text/javascript">
+    function fixContains(a, b) {
+        try{
+            while ((b = b.parentNode)){
+                if (b ===a){
+                    return true;
+                }
+            }
+            return false;
+        } catch (e){
+            return false;
+        }
+    }
+    var pNode = document.getElementById("p-node");
+    var cNode = document.getElementById("c-node").childNodes[0];
+    alert(pNode.contains(cNode));
+    </script>
+```</p>
+<h3 id="dom&#x8282;&#x70B9;&#x7EE7;&#x627F;&#x5C42;&#x6B21;">DOM&#x8282;&#x70B9;&#x7EE7;&#x627F;&#x5C42;&#x6B21;</h3>
+<p>dom&#x8282;&#x70B9;&#x7EE7;&#x627F;&#x5C42;&#x6B21;&#x591A;&#xFF0C;dom&#x64CD;&#x4F5C;&#x8017;&#x8D39;&#x6027;&#x80FD;&#xFF0C;&#x6545;&#x5C06;dom&#x64CD;&#x4F5C;&#x8F6C;&#x4EA4;&#x6846;&#x67B6;&#x5185;&#x90E8;&#xFF0C;&#x7CBE;&#x7EC6;&#x5316;&#x64CD;&#x4F5C;&#xFF0C;&#x865A;&#x62DF;dom&#xFF0C;mvvm&#x6846;&#x67B6;&#xFF1B;dom&#x8282;&#x70B9;&#x5341;&#x5206;&#x590D;&#x6742;&#xFF0C;
+dom&#x64CD;&#x4F5C;&#x5341;&#x5206;&#x8017;&#x6027;&#x80FD;
+react &#x63D0;&#x51FA;&#x865A;&#x62DF;dom&#xFF0C;&#x5408;&#x5E76;&#x4E14;&#x5C4F;&#x853D;&#x4E86;&#x65E0;&#x6548;&#x7684;dom&#xFF0C;&#x5927;&#x5927;&#x63D0;&#x9AD8;&#x4E86;&#x6027;&#x80FD;
+&#x5907;&#x6CE8;&#xFF1A;&#x5173;&#x4E8E;MVVM&#x6A21;&#x5F0F;&#x7684;&#x524D;&#x7AEF;&#x6846;&#x67B6;&#xFF0C;&#x8BF7;&#x79FB;&#x6B65;&#xFF1A;<a href="http://avalonjs.github.io/" target="_blank">http://avalonjs.github.io/</a></p>
+<h3 id="html&#x5D4C;&#x5957;&#x89C4;&#x5219;&#xFF1A;">HTML&#x5D4C;&#x5957;&#x89C4;&#x5219;&#xFF1A;</h3>
+<p>&#x5757;&#x72B6;&#x5143;&#x7D20;&#x4E0E;&#x5185;&#x8054;&#x5143;&#x7D20;&#x5D4C;&#x5957;&#x89C4;&#x5219;<br>
+1&#xFF0C;&#x5757;&#x72B6;&#x5143;&#x7D20;&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x5185;&#x8054;&#x5143;&#x7D20;&#x6216; &#x67D0;&#x4E9B; &#x5757;&#x5143;&#x7D20;&#xFF0C;&#x4F46;&#x5185;&#x8054;&#x5143;&#x7D20;&#x5374;&#x4E0D;&#x80FD;&#x5305;&#x542B;&#x5757;&#x5143;&#x7D20;&#xFF0C;&#x5B83;&#x53EA;&#x80FD;&#x5305;&#x542B;&#x5176;&#x4ED6;&#x7684;&#x5185;&#x8054;&#x5143;&#x7D20;&#x3002;<br>
+2&#xFF0C;&#x5757;&#x7EA7;&#x5143;&#x7D20;&#x4E0D;&#x80FD;&#x653E;&#x5728;</p><p>&#x91CC;&#x9762;&#x3002;<br>
+3&#xFF0C;&#x6709;&#x51E0;&#x4E2A;&#x7279;&#x6B8A;&#x7684;&#x5757;&#x7EA7;&#x5143;&#x7D20;&#x53EA;&#x80FD;&#x5305;&#x542B;&#x5167;&#x8054;&#x5143;&#x7D20;&#xFF0C;&#x4E0D;&#x80FD;&#x518D;&#x5305;&#x542B;&#x5757;&#x7EA7;&#x5143;&#x7D20;&#xFF0C;&#x8FD9;&#x51E0;&#x4E2A;&#x7279;&#x6B8A;&#x7684;&#x6807;&#x7B7E;&#xFF1A;h1-h6,p,dt&#x3002;<br>
+4,li&#x5185;&#x53EF;&#x4EE5;&#x5305;&#x542B;div&#x6807;&#x7B7E;&#x3002;&#xFF08;&#x4E24;&#x8005;&#x90FD;&#x662F;&#x88C5;&#x8F7D;&#x5185;&#x5BB9;&#x7684;&#x5BB9;&#x5668;&#xFF0C;&#x6CA1;&#x6709;&#x7EA7;&#x522B;&#x4E4B;&#x5206;&#xFF0C;&#x540C;&#x7406;&#xFF0C;li&#x5185;&#x53EF;&#x4EE5;&#x5BB9;&#x7EB3;ul/ol&#xFF09;<br>
+5,&#x5757;&#x7EA7;&#x5143;&#x7D20;&#x4E0E;&#x5757;&#x7EA7;&#x5143;&#x7D20;&#x5E76;&#x5217;&#xFF0C;&#x5185;&#x8054;&#x5143;&#x7D20;&#x4E0E;&#x5185;&#x8054;&#x5143;&#x7D20;&#x5E76;&#x5217;&#x3002;<br></p>
+<p><div><h2 id=""></h2><span></span></div>&#x4E0D;&#x63D0;&#x5021;</p>
+<p>&#x5BF9;&#x4E8E;<a>&#x5143;&#x7D20;&#xFF1A;</a></p>
+<p>&#x540C;&#x65F6;&#x5C5E;&#x4E8E;Flow content &#x3001; Phrasing content&#x3001;Interactive content&#x3001;Palpable content&#x5206;&#x7C7B;
+&#x7236;&#x5143;&#x7D20;&#x5FC5;&#x987B;&#x662F;&#x90A3;&#x4E9B;&#x5B50;&#x5143;&#x7D20;&#x4E3A;&#x6BB5;&#x843D;&#x5F0F;&#x5143;&#x7D20;&#x7684;&#x5143;&#x7D20;
+&#x5141;&#x8BB8;&#x7684;&#x5B50;&#x5143;&#x7D20;&#x662F;&#x4EE5;&#x5B83;&#x7684;&#x7236;&#x5143;&#x7D20;&#x5141;&#x8BB8;&#x7684;&#x5B50;&#x5143;&#x7D20;&#x4E3A;&#x51C6;&#xFF0C;&#x4F46;&#x4E0D;&#x80FD;&#x5305;&#x542B;&#x4EA4;&#x4E92;&#x5F0F;&#x5143;&#x7D20;
+&#x8FD9;&#x6837;&#x770B;<a>&#x5143;&#x7D20;&#x8FD8;&#x662F;&#x633A;&#x6709;&#x610F;&#x601D;&#x7684;&#xFF0C;&#x5141;&#x8BB8;&#x7684;&#x5B50;&#x5143;&#x7D20;&#x8981;&#x770B;&#x5B83;&#x7684;&#x7236;&#x5143;&#x7D20;&#x6240;&#x80FD;&#x5305;&#x542B;&#x7684;&#x5B50;&#x5143;&#x7D20;&#x3002;</a></p>
+<p>a&#x5143;&#x7D20;&#x91CC;&#x4E0D;&#x53EF;&#x4EE5;&#x5D4C;&#x5957;&#x4EA4;&#x4E92;&#x5F0F;&#x5143;&#x7D20;(<a>&#x3001;<button>&#x3001;</button><select>&#x7B49;)</select></a></p>
+<p></p><p>&#x91CC;&#x9762;&#x4E0D;&#x53EF;&#x4EE5;&#x5D4C;&#x5957;<div>&#x3001;<h1 id="&#x3001;&#x3001;&#x3001;&#x3001;
+">~<h6 id="&#x3001;&#x3001;&#x3001;&#x3001;
+">&#x3001;<p>&#x3001;<ul>/<ol>/<li>&#x3001;<dl>/<dt>/<dd>&#x3001;<form></form></dd></dt></dl></li></ol></ul></p>
+</h6></h1></div></p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="JS面向对象.html" class="navigation navigation-prev " aria-label="Previous page: JS面向对象">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../ES6/" class="navigation navigation-next " aria-label="Next page: ES6文档">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"DOM基础详解","level":"1.4.2","depth":2,"next":{"title":"ES6文档","level":"1.5","depth":1,"path":"ES6/README.md","ref":"ES6/README.md","articles":[{"title":"es6基础","level":"1.5.1","depth":2,"path":"ES6/es6基础.md","ref":"ES6/es6基础.md","articles":[]},{"title":"模块区别","level":"1.5.2","depth":2,"path":"ES6/模块区别.md","ref":"ES6/模块区别.md","articles":[]},{"title":"babel-preset-env使用指南","level":"1.5.3","depth":2,"path":"ES6/babel-preset-env使用指南.md","ref":"ES6/babel-preset-env使用指南.md","articles":[]}]},"previous":{"title":"JS面向对象","level":"1.4.1","depth":2,"path":"JS/JS面向对象.md","ref":"JS/JS面向对象.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"JS/DOM基础详解.md","mtime":"2018-09-22T04:51:45.670Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-22T10:25:47.014Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
