@@ -1,0 +1,921 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>promise · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="babel-preset-env使用指南.html" />
+    
+    
+    <link rel="prev" href="模块区别.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    笔记本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../HTML_BASE/">
+            
+                <a href="../HTML_BASE/">
+            
+                    
+                    HTML文档
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../HTML_BASE/Html5无刷新URL.html">
+            
+                <a href="../HTML_BASE/Html5无刷新URL.html">
+            
+                    
+                    Html5无刷新URL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../HTML_BASE/页面渲染流程.html">
+            
+                <a href="../HTML_BASE/页面渲染流程.html">
+            
+                    
+                    页面渲染流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../CSS/">
+            
+                <a href="../CSS/">
+            
+                    
+                    CSS文档
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../CSS/css常见布局.html">
+            
+                <a href="../CSS/css常见布局.html">
+            
+                    
+                    css常见布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../JS/">
+            
+                <a href="../JS/">
+            
+                    
+                    JS文档
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../JS/JS面向对象.html">
+            
+                <a href="../JS/JS面向对象.html">
+            
+                    
+                    JS面向对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../JS/DOM基础详解.html">
+            
+                <a href="../JS/DOM基础详解.html">
+            
+                    
+                    DOM基础详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    ES6文档
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="es6基础.html">
+            
+                <a href="es6基础.html">
+            
+                    
+                    es6基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="模块区别.html">
+            
+                <a href="模块区别.html">
+            
+                    
+                    模块区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.3" data-path="promise.html">
+            
+                <a href="promise.html">
+            
+                    
+                    promise
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="babel-preset-env使用指南.html">
+            
+                <a href="babel-preset-env使用指南.html">
+            
+                    
+                    babel-preset-env使用指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../Node/">
+            
+                <a href="../Node/">
+            
+                    
+                    NodeJS服务端
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../Node/npmvsyarn之对比.html">
+            
+                <a href="../Node/npmvsyarn之对比.html">
+            
+                    
+                    Npm vs Yarn 之对比
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../Node/PM2基础操作.html">
+            
+                <a href="../Node/PM2基础操作.html">
+            
+                    
+                    PM2基础操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../Node/Redis来实现定时任务.html">
+            
+                <a href="../Node/Redis来实现定时任务.html">
+            
+                    
+                    Redis来实现定时任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../Config/">
+            
+                <a href="../Config/">
+            
+                    
+                    配置文件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../Config/editorconfig.html">
+            
+                <a href="../Config/editorconfig.html">
+            
+                    
+                    Editorconfig配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../Config/eslint.html">
+            
+                <a href="../Config/eslint.html">
+            
+                    
+                    Eslint配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../Language/">
+            
+                <a href="../Language/">
+            
+                    
+                    开发语言
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../Language/react基础.html">
+            
+                <a href="../Language/react基础.html">
+            
+                    
+                    react基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../Language/react-router.html">
+            
+                <a href="../Language/react-router.html">
+            
+                    
+                    react-router
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../HTTP/">
+            
+                <a href="../HTTP/">
+            
+                    
+                    网络协议文档
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../HTTP/http基础.html">
+            
+                <a href="../HTTP/http基础.html">
+            
+                    
+                    http基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../HTTP/http状态码讲解.html">
+            
+                <a href="../HTTP/http状态码讲解.html">
+            
+                    
+                    http状态码讲解
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../Safety/">
+            
+                <a href="../Safety/">
+            
+                    
+                    安全性能
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../Safety/web安全-XSS.html">
+            
+                <a href="../Safety/web安全-XSS.html">
+            
+                    
+                    web安全-XSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../Safety/前端监控和前端埋点方案设计.html">
+            
+                <a href="../Safety/前端监控和前端埋点方案设计.html">
+            
+                    
+                    前端监控和前端埋点方案设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../BuildTools/">
+            
+                <a href="../BuildTools/">
+            
+                    
+                    构建工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../BuildTools/webpack基础.html">
+            
+                <a href="../BuildTools/webpack基础.html">
+            
+                    
+                    webpack基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../BuildTools/Git基础操作.html">
+            
+                <a href="../BuildTools/Git基础操作.html">
+            
+                    
+                    Git基础操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../CommTools/">
+            
+                <a href="../CommTools/">
+            
+                    
+                    公共具体
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../Other/">
+            
+                <a href="../Other/">
+            
+                    
+                    其他
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../Other/参考书籍.html">
+            
+                <a href="../Other/参考书籍.html">
+            
+                    
+                    参考书籍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.2" data-path="../Other/读取摘要.html">
+            
+                <a href="../Other/读取摘要.html">
+            
+                    
+                    读取摘要
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13.3" data-path="../Other/前端技能汇总.html">
+            
+                <a href="../Other/前端技能汇总.html">
+            
+                    
+                    前端技能汇总
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >promise</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="promise&#x662F;&#x4EC0;&#x4E48;-"># promise&#x662F;&#x4EC0;&#x4E48; #</h2>
+<ul>
+<li>&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x5F02;&#x6B65;&#x8BA1;&#x7B97;</li>
+<li>&#x53EF;&#x4EE5;&#x5C06;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#x961F;&#x5217;&#x5316;&#xFF0C;&#x6309;&#x7167;&#x671F;&#x671B;&#x7684;&#x987A;&#x5E8F;&#x6267;&#x884C;&#xFF0C;&#x8FD4;&#x56DE;&#x7B26;&#x5408;&#x9884;&#x671F;&#x7684;&#x7ED3;&#x679C;</li>
+<li><p>&#x53EF;&#x4EE5;&#x5728;&#x5BF9;&#x8C61;&#x4E4B;&#x95F4;&#x4F20;&#x9012;&#xFF0C;&#x5E2E;&#x6211;&#x4EEC;&#x5904;&#x7406;&#x961F;&#x5217;</p>
+</li>
+<li><p>promise&#x662F;&#x4E00;&#x4E2A;&#x4EE3;&#x7406;&#x5BF9;&#x8C61;&#xFF0C;&#x5B83;&#x548C;&#x539F;&#x5148;&#x8981;&#x8FDB;&#x884C;&#x7684;&#x64CD;&#x4F5C;&#x5E76;&#x65E0;&#x5173;&#x7CFB;</p>
+</li>
+<li>&#x5B83;&#x901A;&#x8FC7;&#x5F15;&#x5165;&#x4E00;&#x4E2A;&#x56DE;&#x8C03;&#xFF0C;&#x907F;&#x514D;&#x66F4;&#x591A;&#x7684;&#x56DE;&#x8C03;</li>
+<li>promise&#x6709;3&#x4E2A;&#x72B6;&#x6001;<ul>
+<li>pending &#x521D;&#x59CB;</li>
+<li>fulfilled &#x64CD;&#x4F5C;&#x6210;&#x529F;</li>
+<li>rejected &#x5931;&#x8D25;
+<img src="https://i.imgur.com/LMpEjPk.jpg" alt="">
+<img src="https://i.imgur.com/Txo8xZ9.jpg" alt="">uhjnmjillksaz<h2 id="&#x4E3A;&#x4EC0;&#x4E48;&#x4F1A;&#x51FA;&#x73B0;promise">&#x4E3A;&#x4EC0;&#x4E48;&#x4F1A;&#x51FA;&#x73B0;promise</h2>
+</li>
+</ul>
+</li>
+<li>js&#x68C0;&#x67E5;&#x8868;&#x5355;&#x800C;&#x751F;&#xFF0C;&#x64CD;&#x4F5C;DOM&#xFF0C;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#x80FD;&#x591F;&#x907F;&#x514D;&#x7A97;&#x683C;&#x7684;&#x51BB;&#x7ED3;</li>
+<li>&#x521B;&#x9020;&#x5B83;&#x7684;&#x9996;&#x8981;&#x76EE;&#x6807;&#x662F;&#x64CD;&#x4F5C;DOM</li>
+<li>javascript&#x7684;&#x64CD;&#x4F5C;&#x5927;&#x591A;&#x6570;&#x662F;&#x5F02;&#x6B65;&#x7684;</li>
+<li>&#x5F02;&#x6B65;&#x4E3B;&#x8981;&#x662F;&#x4E8B;&#x4EF6;&#x7684;&#x4FA6;&#x542C;&#x4E0E;&#x54CD;&#x5E94;&#xFF0C;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF0C;ajax&#x4EE3;&#x7801;</li>
+<li>&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x7684;javascript&#x662F;&#x4E00;&#x90E8;&#x64CD;&#x4F5C;&#x4EE5;&#x4E8B;&#x4EF6;&#x4E3A;&#x4E3B;</li>
+<li>node.js&#x662F;&#x65E0;&#x963B;&#x585E;&#x6216;&#x9AD8;&#x5E76;&#x53D1;&#xFF0C;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#x4E0A;&#x5176;&#x4FDD;&#x969C;&#xFF0C;&#x5927;&#x91CF;&#x64CD;&#x4F5C;&#x4F9D;&#x8D56;&#x56DE;&#x8C03;&#x51FD;&#x6570;<h2 id="&#x5F02;&#x6B65;&#x56DE;&#x8C03;&#x7684;&#x95EE;&#x9898;">&#x5F02;&#x6B65;&#x56DE;&#x8C03;&#x7684;&#x95EE;&#x9898;</h2>
+</li>
+<li>&#x56DE;&#x8C03;&#x5730;&#x72F1;&#xFF1A;&#x5D4C;&#x5957;&#x5C42;&#x6B21;&#x5F88;&#x6DF1;&#xFF0C;&#x96BE;&#x4EE5;&#x7EF4;&#x62A4;</li>
+<li>&#x65E0;&#x6CD5;&#x6B63;&#x5E38;&#x4F7F;&#x7528;return&#x548C;throw</li>
+<li>&#x591A;&#x4E2A;&#x56DE;&#x8C03;&#x4E4B;&#x95F4;&#x96BE;&#x4EE5;&#x5EFA;&#x7ACB;&#x8054;&#x7CFB;</li>
+<li>&#x65E0;&#x6CD5;&#x6B63;&#x5E38;&#x68C0;&#x7D22;&#x5806;&#x6808;&#x4FE1;&#x606F;</li>
+<li>&#x5F02;&#x6B65;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x4F1A;&#x5728;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x6808;&#x4E2D;&#x8FD0;&#x884C;</li>
+<li>&#x5F02;&#x6B65;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x4E0E;&#x524D;&#x9762;&#x7684;&#x51FD;&#x6570;&#x4E0D;&#x5904;&#x4E8E;&#x540C;&#x4E00;&#x4E2A;&#x6808;&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x9002;&#x7528;try/cath&#x7B49;&#x4E0A;&#x5C42;&#x68C0;&#x67E5;&#x673A;&#x5236;&#xFF0C;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x7684;&#x6C61;&#x67D3;&#x95EE;&#x9898;<h2 id="&#x65B9;&#x6CD5;">&#x65B9;&#x6CD5;</h2>
+&#x4E00;&#x3001;.then()&#x91CC;&#x6709;.then()&#x7684;&#x60C5;&#x51B5;&#xFF1A;&#x4E00;&#x4E2A;&#x54CD;&#x5E94;&#x51FD;&#x6570;&#x4E2D;&#x53C8;&#x6709;&#x94FE;&#x5F0F;&#x8C03;&#x7528;</li>
+</ul>
+<p>1&#x3001;&#x56E0;&#x4E3A;.then()&#x8FD4;&#x56DE;&#x7684;&#x8FD8;&#x662F;promise&#x5B9E;&#x4F8B;&#x3002;</p>
+<p>2&#x3001;&#x4F1A;&#x7B49;&#x91CC;&#x9762;&#x7684;.then()&#x6267;&#x884C;&#x5B8C;&#xFF0C;&#x5728;&#x6267;&#x884C;&#x5916;&#x9762;&#x7684;&#x3002;</p>
+<p>3&#x3001;&#x5BF9;&#x4E8E;&#x6211;&#x4EEC;&#x6765;&#x8BF4;&#xFF0C;&#x6B64;&#x65F6;&#x6700;&#x597D;&#x5C06;&#x5176;&#x5C55;&#x5F00;&#xFF0C;&#x4F1A;&#x66F4;&#x597D;&#x8BFB;&#x3002;
+&#x4E00;&#x3001;</p>
+<p>promise&#x961F;&#x5217;&#x7684;&#x91CD;&#x8981;&#x7279;&#x6027;&#xFF0C;&#x5728;&#x4EFB;&#x4F55;&#x5730;&#x65B9;&#x751F;&#x6210;&#x4E86;&#x4E00;&#x4E2A;promise&#x961F;&#x5217;&#x4E4B;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x628A;&#x5B83;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x4F20;&#x9012;&#x5230;&#x5176;&#x4ED6;&#x5730;&#x65B9;&#xFF0C;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x7684;&#x64CD;&#x4F5C;&#x662F;&#x961F;&#x5217;&#x7684;&#x72B6;&#x6001;&#xFF0C;&#x5373;&#x5148;&#x8FDB;&#x5148;&#x51FA;&#x7684;&#x72B6;&#x6001;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x5728;&#x540E;&#x9762;&#x8FFD;&#x52A0;&#x4EFB;&#x610F;&#x591A;&#x7684;then&#xFF0C;&#x4E0D;&#x7BA1;&#x4E4B;&#x524D;&#x7684;&#x961F;&#x5217;&#x662F;&#x5B8C;&#x6210;&#x8FD8;&#x662F;&#x6CA1;&#x6709;&#x5B8C;&#x6210;&#xFF0C;&#x961F;&#x5217;&#x90FD;&#x4F1A;&#x6309;&#x7167;&#x987A;&#x5E8F;&#x5B8C;&#x6210;&#x3002;</p>
+<p>&#x4E8C;&#x3001;</p>
+<p>let promise = new Promise(resolve =&gt; {
+  setTimeout(() =&gt; {
+    console.log(&apos;the promise fulfilled&apos;);
+    resolve(&apos;hello&apos;);
+  }, 1000);
+});
+setTimeout(() =&gt; {
+  promise.then(value =&gt; {
+    console.log(value);
+  })
+})
+&#x4E00;&#x3001;&#x9519;&#x8BEF;&#x5904;&#x7406;</p>
+<p>1&#x3001;promise&#x4F1A;&#x81EA;&#x52A8;&#x6355;&#x83B7;&#x5185;&#x90E8;&#x5F02;&#x5E38;&#xFF0C;&#x5E76;&#x4EA4;&#x7ED9;rejected&#x54CD;&#x5E94;&#x51FD;&#x6570;&#x5904;&#x7406;&#x3002;</p>
+<p>2&#x3001;promise&#x8BD5;&#x56FE;&#x5728;&#x73B0;&#x6709;&#x7684;&#x8BED;&#x8A00;&#x6846;&#x67B6;&#x4E2D;&#x89E3;&#x51B3;&#x5F02;&#x6B65;&#x56DE;&#x8C03;&#x5E26;&#x6765;&#x7684;&#x95EE;&#x9898;&#x3002;&#x5728;&#x6808;&#x7684;&#x8BED;&#x8A00;&#x57FA;&#x5C42;&#x8FD0;&#x884C;&#x6C60;&#x76F8;&#x5173;&#x7684;&#x95EE;&#x9898;&#x5C31;&#x65E0;&#x6CD5;&#x5904;&#x7406;&#x4E86;&#xFF0C;&#x6211;&#x4EEC;&#x80FD;&#x6355;&#x83B7;&#x5230;&#x7684;&#x662F;&#x5F02;&#x6B65;&#x5B8C;&#x6210;&#x56DE;&#x8C03;&#x4E4B;&#x540E;&#x7684;&#x8FD9;&#x90E8;&#x5206;&#x6808;&#x4FE1;&#x606F;&#xFF0C;&#x4ECD;&#x7136;&#x65E0;&#x6CD5;&#x786E;&#x5B9A;&#x662F;&#x54EA;&#x91CC;&#x5BFC;&#x81F4;&#x7684;&#x9519;&#x8BEF;&#x3002;</p>
+<p>3&#x3001;promise&#x6267;&#x884C;&#x5668;&#x5982;&#x679C;&#x53D1;&#x751F;&#x9519;&#x8BEF;&#xFF0C;&#x6267;&#x884C;&#x5668;&#x72B6;&#x6001;&#x5C31;&#x4F1A;&#x88AB;&#x7F6E;&#x4E3A;rejected&#xFF0C;fulfilled&#x72B6;&#x6001;&#x5C31;&#x4E0D;&#x4F1A;&#x88AB;&#x6267;
+&#x4E00;&#x3001;.catch()&#x4E4B;&#x540E;.then()</p>
+<p>catch&#x4E5F;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;promise&#x5B9E;&#x4F8B;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x629B;&#x51FA;&#x9519;&#x8BEF;&#xFF0C;&#x4E5F;&#x4F1A;&#x662F;fulfilled&#x72B6;&#x6001;&#xFF0C;&#x4F1A;&#x6267;&#x884C;&#x540E;&#x9762;&#x7684;then()&#x3002;</p>
+<p>&#x4E8C;&#x3001;&#x5F3A;&#x70C8;&#x5EFA;&#x8BAE;&#x5728;&#x6240;&#x6709;&#x961F;&#x5217;&#x6700;&#x540E;&#x90FD;&#x52A0;&#x4E0A;.catch()&#xFF0C;&#x4EE5;&#x907F;&#x514D;&#x6F0F;&#x6389;&#x9519;&#x8BEF;&#x5904;&#x7406;&#x9020;&#x6210;&#x610F;&#x60F3;&#x4E0D;&#x5230;&#x7684;&#x95EE;&#x9898;&#x3002;</p>
+<h2 id="promiseall&#xFF1A;&#x6279;&#x91CF;&#x6267;&#x884C;">promise.all()&#xFF1A;&#x6279;&#x91CF;&#x6267;&#x884C;</h2>
+<p>1&#x3001;Promise.all([p1, p2, p3,  &#x2026;])&#x7528;&#x4E8E;&#x5C06;&#x591A;&#x4E2A;promise&#x5B9E;&#x4F8B;&#xFF0C;&#x5305;&#x88C5;&#x6210;&#x4E00;&#x4E2A;&#x65B0;&#x7684;promise&#x5B9E;&#x4F8B;&#x3002;</p>
+<p>2&#x3001;&#x8FD4;&#x56DE;&#x7684;&#x5B9E;&#x4F8B;&#x5C31;&#x662F;&#x666E;&#x901A;promise</p>
+<p>3&#x3001;&#x5B83;&#x63A5;&#x6536;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x3002;</p>
+<p>4&#x3001;&#x6570;&#x7EC4;&#x91CC;&#x53EF;&#x4EE5;&#x662F;promise&#x5BF9;&#x8C61;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x662F;&#x522B;&#x7684;&#x503C;&#xFF0C;&#x53EA;&#x6709;promise&#x5BF9;&#x8C61;&#x4F1A;&#x7B49;&#x5F85;&#x72B6;&#x6001;&#x6539;&#x53D8;&#x3002;</p>
+<p>5&#x3001;&#x5F53;&#x6240;&#x6709;&#x5B50;promise&#x90FD;&#x5B8C;&#x6210;&#xFF0C;&#x8BE5;promise&#x5B8C;&#x6210;&#xFF0C;&#x8FD4;&#x56DE;&#x503C;&#x662F;&#x5168;&#x90E8;&#x503C;&#x7684;&#x6570;&#x7EC4;&#x3002;</p>
+<h2 id="&#x5B9E;&#x73B0;&#x961F;&#x5217;">&#x5B9E;&#x73B0;&#x961F;&#x5217;</h2>
+<p>1&#x3001;forEach()</p>
+<p>&#xFF08;1&#xFF09;</p>
+<p>function queue(things) {
+  let promise = Promise.resolve();
+  things.forEach(thing =&gt; {
+    promise = promise.then(() =&gt; {
+      return new Promise(resolve =&gt; {
+        doThing(thing, () =&gt; {
+          resolve();
+        });
+      });
+    });
+  });
+  return promise;
+}
+queue([&apos;lots&apos;, &apos;of&apos;, &apos;things&apos;, ....]);
+&#xFF08;2&#xFF09;&#x5E38;&#x89C1;&#x9519;&#x8BEF;&#xFF1A;&#x6CA1;&#x6709;&#x628A;.then()&#x4EA7;&#x751F;&#x7684;&#x65B0;&#x7684;promise&#x5B9E;&#x4F8B;&#x8D4B;&#x7ED9;then,&#x6CA1;&#x6709;&#x751F;&#x6210;&#x961F;&#x5217;&#x3002;</p>
+<p>2&#x3001;reduce()&#xFF0C;&#x6570;&#x7EC4;&#x7684;&#x4E00;&#x7AEF;&#x904D;&#x5386;&#x5230;&#x53E6;&#x4E00;&#x7AEF;&#x3002;</p>
+<p>&#xFF08;1&#xFF09;</p>
+<p>function queue(things) {
+  return things.reduce((promise, things) =&gt; {
+    return promise.then(() =&gt; {
+      return new Promise(resolve =&gt; {
+        doThing(thing, () =&gt; {
+          resolve();
+        });
+      });
+    });
+  }), Promise.resolve();
+}
+queue([&apos;lots&apos;, &apos;of&apos;, &apos;things&apos;, ....]);
+&#xFF08;2&#xFF09;&#x5E38;&#x89C1;&#x9519;&#x8BEF;&#xFF1A;Promise&#x5B9E;&#x4F8B;&#x521B;&#x5EFA;&#x4E4B;&#x540E;&#xFF0C;&#x4F1A;&#x7ACB;&#x523B;&#x6267;&#x884C;&#x6267;&#x884C;&#x5668;&#x4EE3;&#x7801;&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x4E2A;&#x4E5F;&#x65E0;&#x6CD5;&#x8FBE;&#x6210;&#x961F;&#x5217;&#x7684;&#x6548;&#x679C;&#x3002;</p>
+<h2 id="promiseresolve">promise.resolve()</h2>
+<p>1&#x3001;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;fulfilled&#x7684;promise&#x5B9E;&#x4F8B;&#xFF0C;&#x6216;&#x539F;&#x59CB;promise&#x5B9E;&#x4F8B;&#x3002;</p>
+<p>&#xFF08;1&#xFF09;&#x53C2;&#x6570;&#x4E3A;&#x7A7A;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x72B6;&#x6001;&#x4E3A;fulfilled&#x7684;promise&#x5B9E;&#x4F8B;</p>
+<p>&#xFF08;2&#xFF09;&#x53C2;&#x6570;&#x662F;&#x4E00;&#x4E2A;&#x8DDF;promise&#x65E0;&#x5173;&#x7684;&#x503C;&#xFF0C;&#x540C;&#x4E0A;&#xFF0C;&#x4E0D;&#x8FC7;fulfilled&#x54CD;&#x5E94;&#x51FD;&#x6570;&#x4F1A;&#x5F97;&#x5230;&#x8FD9;&#x4E2A;&#x53C2;&#x6570;&#x3002;</p>
+<p>&#xFF08;3&#xFF09;&#x53C2;&#x6570;&#x4E3A;promise&#x5B9E;&#x4F8B;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;&#x8BE5;&#x5B9E;&#x4F8B;&#xFF0C;&#x4E0D;&#x505A;&#x4EFB;&#x4F55;&#x4FEE;&#x6539;&#x3002;</p>
+<p>&#xFF08;4&#xFF09;&#x53C2;&#x6570;&#x4E3A;thenable&#xFF0C;&#x7ACB;&#x523B;&#x6267;&#x884C;&#x5B83;&#x7684;.then()&#x51FD;&#x6570;</p>
+<h2 id="promisereject">promise.reject()</h2>
+<p>1&#x3001;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;rejected&#x7684;promise&#x5B9E;&#x4F8B;&#xFF0C;&#x6216;&#x539F;&#x59CB;promise&#x5B9E;&#x4F8B;&#x3002;</p>
+<p>&#xFF08;1&#xFF09;&#x53C2;&#x6570;&#x4E3A;&#x7A7A;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x72B6;&#x6001;&#x4E3A;rejected&#x7684;promise&#x5B9E;&#x4F8B;</p>
+<p>&#xFF08;2&#xFF09;&#x53C2;&#x6570;&#x662F;&#x4E00;&#x4E2A;&#x8DDF;promise&#x65E0;&#x5173;&#x7684;&#x503C;&#xFF0C;&#x540C;&#x4E0A;&#xFF0C;&#x4E0D;&#x8FC7;rejected&#x54CD;&#x5E94;&#x51FD;&#x6570;&#x4F1A;&#x5F97;&#x5230;&#x8FD9;&#x4E2A;&#x53C2;&#x6570;&#x3002;</p>
+<p>&#xFF08;3&#xFF09;&#x53C2;&#x6570;&#x4E3A;promise&#x5B9E;&#x4F8B;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;&#x8BE5;&#x5B9E;&#x4F8B;&#xFF0C;&#x4E0D;&#x505A;&#x4EFB;&#x4F55;&#x4FEE;&#x6539;&#x3002;</p>
+<p>&#xFF08;4&#xFF09;&#x4E0E;promise.resolve&#x76F8;&#x6BD4;&#xFF0C;&#x4E0D;&#x8BA4;thenable&#x3002;</p>
+<h2 id="promiserace">promise.race()</h2>
+<p>1&#x3001;&#x7C7B;&#x4F3C;promise.all(),&#x533A;&#x522B;&#x5728;&#x4E8E;&#x5B83;&#x6709;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;&#x5B8C;&#x6210;&#x5C31;&#x7B97;&#x5B8C;&#x6210;&#x3002;</p>
+<p>2&#x3001;&#x5E38;&#x89C1;&#x7528;&#x6CD5;</p>
+<p>&#xFF08;1&#xFF09;&#x628A;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#x548C;&#x5B9A;&#x65F6;&#x5668;&#x653E;&#x5728;&#x4E00;&#x8D77;</p>
+<p>&#xFF08;2&#xFF09;&#x5982;&#x679C;&#x5B9A;&#x65F6;&#x5668;&#x5148;&#x89E6;&#x53D1;&#xFF0C;&#x5C31;&#x8BA4;&#x4E3A;&#x8D85;&#x65F6;&#xFF0C;&#x544A;&#x77E5;&#x7528;&#x6237;&#x3002;</p>
+<h2 id="&#x628A;&#x4EFB;&#x4F55;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#x5305;&#x88C5;&#x6210;promise">&#x628A;&#x4EFB;&#x4F55;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#x5305;&#x88C5;&#x6210;promise</h2>
+<p>1&#x3001;&#x5047;&#x8BBE;&#x9700;&#x6C42;&#xFF1A;</p>
+<p>&#xFF08;1&#xFF09;&#x7528;&#x6237;&#x70B9;&#x51FB;&#x6309;&#x94AE;&#xFF0C;&#x5F39;&#x51FA;&#x786E;&#x8BA4;&#x7A97;&#x4F53;&#x3002;</p>
+<p>&#xFF08;2&#xFF09;&#x7528;&#x6237;&#x786E;&#x8BA4;&#x548C;&#x53D6;&#x6D88;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x5904;&#x7406;&#x3002;</p>
+<p>let confirm = popupManager.confirm(&apos;&#x60A8;&#x786E;&#x5B9A;&#x4E48;&apos;);
+confirm.promise
+  .then(() =&gt; {
+    // do confirm staff
+  })
+  .catch(() =&gt; {
+    // do cancel staff
+  })</p>
+<p>// &#x7A97;&#x4F53;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;
+class Confirm{
+  constructor() {
+    this.promise = new Promise((resolve, reject) =&gt; {
+      this.confirmButton.onClick = resolve;
+      this.cancelButton.onclick = reject;
+    })
+  }
+}</p>
+<p>&#x4E00;&#x3001;&#x5982;&#x679C;&#x4F60;&#x9700;&#x8981;&#x5728;ie&#x4F7F;&#x7528;promise&#xFF0C;&#x6709;&#x4E24;&#x4E2A;&#x9009;&#x62E9;&#xFF1A;</p>
+<p>1&#x3001;&#x53EA;&#x60F3;&#x5B9E;&#x73B0;&#x5F02;&#x6B65;&#x961F;&#x5217;&#xFF1A;jQuery.defered</p>
+<p>2&#x3001;&#x9700;&#x8981;&#x517C;&#x5BB9;&#x6240;&#x6709;&#x5E73;&#x53F0;&#xFF1A;Bluebird&#x3001; Promise polyfill</p>
+<p>&#x4E8C;&#x3001;fetch api</p>
+<p>1&#x3001;fetch api&#x662F;XMLHttpRequest&#x7684;&#x73B0;&#x4EE3;&#x5316;&#x66FF;&#x4EE3;&#x65B9;&#x6848;&#x3002;</p>
+<p>&#xFF08;1&#xFF09;&#x66F4;&#x5F3A;&#x5927;&#xFF0C;&#x4E5F;&#x66F4;&#x53CB;&#x597D;&#x3002;
+&#x4E00;&#x3001;async/ await&#xFF1A;es2017&#x65B0;&#x589E;&#x8FD0;&#x7B97;&#x7B26;&#xFF0C;&#x65B0;&#x7684;&#x8BED;&#x8A00;&#x5143;&#x7D20;&#x3002;</p>
+<p>1&#x3001;&#x8D4B;&#x4E88;javascript&#x4EE5;&#x987A;&#x5E8F;&#x624B;&#x6CD5;&#x7F16;&#x5199;&#x5F02;&#x6B65;&#x811A;&#x672C;&#x7684;&#x80FD;&#x529B;&#x3002;</p>
+<p>2&#x3001;&#x65E2;&#x4FDD;&#x7559;&#x5F02;&#x6B65;&#x8FD0;&#x7B97;&#x7684;&#x65E0;&#x963B;&#x585E;&#x7279;&#x6027;&#xFF0C;&#x8FD8;&#x7EE7;&#x7EED;&#x4F7F;&#x7528;&#x540C;&#x6B65;&#x5199;&#x6CD5;&#x3002;</p>
+<p>3&#x3001;&#x8FD8;&#x80FD;&#x6B63;&#x5E38;&#x4F7F;&#x7528;return/ try/ catch&#x3002;</p>
+<p>4&#x3001;async/ await &#x4ECD;&#x7136;&#x9700;&#x8981;promise&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="模块区别.html" class="navigation navigation-prev " aria-label="Previous page: 模块区别">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="babel-preset-env使用指南.html" class="navigation navigation-next " aria-label="Next page: babel-preset-env使用指南">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"promise","level":"1.5.3","depth":2,"next":{"title":"babel-preset-env使用指南","level":"1.5.4","depth":2,"path":"ES6/babel-preset-env使用指南.md","ref":"ES6/babel-preset-env使用指南.md","articles":[]},"previous":{"title":"模块区别","level":"1.5.2","depth":2,"path":"ES6/模块区别.md","ref":"ES6/模块区别.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ES6/promise.md","mtime":"2018-09-30T11:41:59.092Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-30T11:46:24.735Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
